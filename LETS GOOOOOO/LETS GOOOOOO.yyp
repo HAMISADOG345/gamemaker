@@ -25,6 +25,7 @@
     {"$GMFolder":"","%Name":"sprites","folderPath":"folders/game stuff/rift/sprites.yy","name":"sprites","resourceType":"GMFolder","resourceVersion":"2.0",},
     {"$GMFolder":"","%Name":"spikedCube","folderPath":"folders/game stuff/spikedCube.yy","name":"spikedCube","resourceType":"GMFolder","resourceVersion":"2.0",},
     {"$GMFolder":"","%Name":"sprites","folderPath":"folders/game stuff/spikedCube/sprites.yy","name":"sprites","resourceType":"GMFolder","resourceVersion":"2.0",},
+    {"$GMFolder":"","%Name":"rooms","folderPath":"folders/rooms.yy","name":"rooms","resourceType":"GMFolder","resourceVersion":"2.0",},
     {"$GMFolder":"","%Name":"old stuff","folderPath":"folders/old stuff.yy","name":"old stuff","resourceType":"GMFolder","resourceVersion":"2.0",},
     {"$GMFolder":"","%Name":"parents","folderPath":"folders/parents.yy","name":"parents","resourceType":"GMFolder","resourceVersion":"2.0",},
     {"$GMFolder":"","%Name":"player","folderPath":"folders/player.yy","name":"player","resourceType":"GMFolder","resourceVersion":"2.0",},
@@ -65,6 +66,7 @@
     {"id":{"name":"objWall32x32","path":"objects/objWall32x32/objWall32x32.yy",},},
     {"id":{"name":"objWallHorizontalMoving","path":"objects/objWallHorizontalMoving/objWallHorizontalMoving.yy",},},
     {"id":{"name":"objWallVerticalMoving","path":"objects/objWallVerticalMoving/objWallVerticalMoving.yy",},},
+    {"id":{"name":"rm1","path":"rooms/rm1/rm1.yy",},},
     {"id":{"name":"sprBob","path":"sprites/sprBob/sprBob.yy",},},
     {"id":{"name":"sprCannon","path":"sprites/sprCannon/sprCannon.yy",},},
     {"id":{"name":"sprCheckpoint","path":"sprites/sprCheckpoint/sprCheckpoint.yy",},},
@@ -104,7 +106,9 @@
   ],
   "resourceType":"GMProject",
   "resourceVersion":"2.0",
-  "RoomOrderNodes":[],
+  "RoomOrderNodes":[
+    {"roomId":{"name":"rm1","path":"rooms/rm1/rm1.yy",},},
+  ],
   "templateType":"game",
   "TextureGroups":[
     {"$GMTextureGroup":"","%Name":"Default","autocrop":true,"border":2,"compressFormat":"bz2","customOptions":"","directory":"","groupParent":null,"isScaled":true,"loadType":"default","mipsToGenerate":0,"name":"Default","resourceType":"GMTextureGroup","resourceVersion":"2.0","targets":-1,},

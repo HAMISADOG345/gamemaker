@@ -11,6 +11,8 @@
   "defaultScriptType":0,
   "Folders":[
     {"$GMFolder":"","%Name":"Player","folderPath":"folders/Player.yy","name":"Player","resourceType":"GMFolder","resourceVersion":"2.0",},
+    {"$GMFolder":"","%Name":"spr","folderPath":"folders/Player/spr.yy","name":"spr","resourceType":"GMFolder","resourceVersion":"2.0",},
+    {"$GMFolder":"","%Name":"obj","folderPath":"folders/Player/obj.yy","name":"obj","resourceType":"GMFolder","resourceVersion":"2.0",},
   ],
   "ForcedPrefabProjectReferences":[],
   "IncludedFiles":[],
@@ -21,9 +23,7 @@
   },
   "name":"LETS GOOOOOO",
   "resources":[
-    {"id":{"name":"objSmallPlayer","path":"objects/objSmallPlayer/objSmallPlayer.yy",},},
     {"id":{"name":"Room1","path":"rooms/Room1/Room1.yy",},},
-    {"id":{"name":"sprPlayerIdle","path":"sprites/sprPlayerIdle/sprPlayerIdle.yy",},},
   ],
   "resourceType":"GMProject",
   "resourceVersion":"2.0",

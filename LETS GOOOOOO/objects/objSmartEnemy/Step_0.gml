@@ -284,6 +284,11 @@ else // This is animation end logic for any attack sprite
 {
 	
 }
+if objSmallPlayer.debug {
+	if mouse_x = x and mouse_y = y and keyboard_check(ord("K")) {
+		instance_destroy(self)
+	}
+}
 
 
 

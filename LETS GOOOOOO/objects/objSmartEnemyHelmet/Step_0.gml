@@ -34,12 +34,12 @@ if varLook = 0
 if place_meeting(x-1,y,objSmallPlayer) and not varAttacking and place_meeting(x,y+1,objWall){
 	varAttacking = true
 	isAttackingLeft = true
-	sprite_index = sprVGhitLeft
+	sprite_index = varSPRHitLeft
 }
 if place_meeting(x+1,y,objSmallPlayer) and not varAttacking and place_meeting(x,y+1,objWall){
 	varAttacking = true
 	isAttackingzRight = true
-	sprite_index = sprVGhitRight
+	sprite_index = varSPRHitRight
 }
 
 if varAttacking {
@@ -338,6 +338,11 @@ if not varAttacking
 else // This is animation end logic for any attack sprite
 {
 	
+}
+if objSmallPlayer.debug {
+	if mouse_x = x and mouse_y = y and keyboard_check(ord("K")) {
+		instance_destroy(self)
+	}
 }
 
 

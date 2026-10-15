@@ -32,7 +32,7 @@ varHSpeed = 0
 varJumps = 0
 vely = 0
 
-image_xscale = random_range(0.5,2.25)
+image_xscale = random_range(1.5,3.25)
 image_yscale = image_xscale
 
 hasHelemet = false
@@ -46,6 +46,8 @@ isFall = false
 isStaying = false
 
 armorSpriteScale = image_xscale
+
+tutorial = false
 
 
 

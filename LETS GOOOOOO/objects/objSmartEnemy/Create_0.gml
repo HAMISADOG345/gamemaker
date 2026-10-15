@@ -32,24 +32,38 @@ varHSpeed = 0
 varJumps = 0
 vely = 0
 
-image_xscale = irandom_range(0.5,2)
+image_xscale = irandom_range(1.5,3)
 image_yscale = image_xscale
 
+varWillSpawnNone = false
+varWillSpawnHelmet = false
 
 var armor = irandom_range(1,100)
 
-if armor <= 40 {
-	if armor <= 40 and armor >= 25 {
+if varWillSpawnNone or varWillSpawnHelmet {
+	if varWillSpawnHelmet {
 		instance_create_layer(x,y,"riftLayer",objSmartEnemyHelmet)
 		instance_destroy(self)
-	} if armor >= 1 and armor<= 15 {
-		return
-	} else {
+	}
+	if varWillSpawnNone {
 		return
 	}
 } else {
-	return
+	if armor <= 40 {
+		if armor <= 40 and armor >= 25 {
+			instance_create_layer(x,y,"riftLayer",objSmartEnemyHelmet)
+			instance_destroy(self)
+		} if armor >= 1 and armor<= 15 {
+			return 
+		} else {
+			return
+		}
+	} else {
+		return
+	}
 }
+
+tutorial = false
 
 
 

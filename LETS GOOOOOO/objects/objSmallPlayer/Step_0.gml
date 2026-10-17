@@ -70,6 +70,9 @@ if varHasJetPack = false
 			varHSpeed = varRunningSpeed
 			varRunning = true
 		}
+		if place_meeting(x+1,y+1,objSlope){
+			y-=varHSpeed/2
+		}
 	}
 
 	// if left arrow key down, then set HSpeed to the negative value of Walking Speed
@@ -82,6 +85,9 @@ if varHasJetPack = false
 		{
 			varHSpeed = -varRunningSpeed
 			varRunning = true
+		}
+		if place_meeting(x-1,y+1,objSlope){
+			y+=varHSpeed/2
 		}
 	}
 

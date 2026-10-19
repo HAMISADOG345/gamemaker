@@ -1,0 +1,52 @@
+#include <SFML/Graphics.hpp>
+#include <iostream>
+#include "core/instaGame.cpp"
+
+using namespace sf;
+using namespace std;
+
+RenderWindow window = RenderWindow(VideoMode(1000, 800), "m m m minecraft");
+
+Sprite backgroundSprite;
+Event event;
+Texture background;
+
+void update() {
+}
+
+void draw() {
+    window.clear(Color::Black);
+
+    //background.loadFromFile("");
+    backgroundSprite.setTexture(background);
+    backgroundSprite.setPosition(0, 0);
+    window.draw(backgroundSprite);
+
+    window.display();
+}
+
+int main() {
+    window;
+
+    while (window.isOpen()) {
+        while (window.pollEvent(event)) {
+            if (event.type == Event::Closed) {
+                window.close();
+            }
+        }
+
+        if (Keyboard::isKeyPressed(Keyboard::Escape)) {
+            window.close();
+        }
+
+        update();
+
+    }
+
+
+
+    return 0;
+}
+void test() {
+
+}

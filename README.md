@@ -21,5 +21,6 @@ untitled2: a simple game engine
   panda.png
   panda.png
   GOT DRUNK
+  SFML REQUIRED
   
 

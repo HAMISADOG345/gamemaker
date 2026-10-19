@@ -3,7 +3,7 @@ AND I NEED THE PLAYER SPRITES
 
 untitled2: a simple game engine
 
-  untitled2 is a very simple game engine in cpp i did all the heavy lifting so u can just write games in 5 lines or 7
+  untitled2 is a very simple game engine it is so simple in that it can only show unmoving sprites in cpp i did all the heavy lifting so u can just write games in 5 lines or 7 
   
   example:
   
@@ -14,4 +14,12 @@ untitled2: a simple game engine
       game.winBuild();
       return 0;
   }
+
+  panda.png
+  panda.png
+  panda.png
+  panda.png
+  panda.png
+  GOT DRUNK
+  
 

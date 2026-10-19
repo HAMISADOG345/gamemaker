@@ -301,6 +301,7 @@
     {"name":"inst_19F2FC21","path":"rooms/rm1/rm1.yy",},
     {"name":"inst_77C6D8B7","path":"rooms/rm1/rm1.yy",},
     {"name":"inst_38F237EA","path":"rooms/rm1/rm1.yy",},
+    {"name":"inst_35590ADC","path":"rooms/rm1/rm1.yy",},
   ],
   "isDnd":false,
   "layers":[
@@ -328,7 +329,9 @@
         {"$GMRInstance":"v4","%Name":"inst_50873623","colour":4294967295,"frozen":false,"hasCreationCode":false,"ignore":false,"imageIndex":0,"imageSpeed":1.0,"inheritCode":false,"inheritedItemId":null,"inheritItemSettings":false,"isDnd":false,"name":"inst_50873623","objectId":{"name":"objSpikes","path":"objects/objSpikes/objSpikes.yy",},"properties":[],"resourceType":"GMRInstance","resourceVersion":"2.0","rotation":0.0,"scaleX":1.0,"scaleY":1.0,"x":576.0,"y":2688.0,},
         {"$GMRInstance":"v4","%Name":"inst_742977A4","colour":4294967295,"frozen":false,"hasCreationCode":false,"ignore":false,"imageIndex":0,"imageSpeed":1.0,"inheritCode":false,"inheritedItemId":null,"inheritItemSettings":false,"isDnd":false,"name":"inst_742977A4","objectId":{"name":"objSpikes","path":"objects/objSpikes/objSpikes.yy",},"properties":[],"resourceType":"GMRInstance","resourceVersion":"2.0","rotation":0.0,"scaleX":1.0,"scaleY":1.0,"x":448.0,"y":2912.0,},
       ],"layers":[],"name":"riftLayer","properties":[],"resourceType":"GMRInstanceLayer","resourceVersion":"2.0","userdefinedDepth":false,"visible":true,},
-    {"$GMRInstanceLayer":"","%Name":"checkpointLayer","depth":100,"effectEnabled":true,"effectType":null,"gridX":32,"gridY":32,"hierarchyFrozen":false,"inheritLayerDepth":false,"inheritLayerSettings":false,"inheritSubLayers":true,"inheritVisibility":true,"instances":[],"layers":[],"name":"checkpointLayer","properties":[],"resourceType":"GMRInstanceLayer","resourceVersion":"2.0","userdefinedDepth":false,"visible":true,},
+    {"$GMRInstanceLayer":"","%Name":"checkpointLayer","depth":100,"effectEnabled":true,"effectType":null,"gridX":32,"gridY":32,"hierarchyFrozen":false,"inheritLayerDepth":false,"inheritLayerSettings":false,"inheritSubLayers":true,"inheritVisibility":true,"instances":[
+        {"$GMRInstance":"v4","%Name":"inst_35590ADC","colour":4294967295,"frozen":false,"hasCreationCode":false,"ignore":false,"imageIndex":0,"imageSpeed":1.0,"inheritCode":false,"inheritedItemId":null,"inheritItemSettings":false,"isDnd":false,"name":"inst_35590ADC","objectId":{"name":"objCheckpoint","path":"objects/objCheckpoint/objCheckpoint.yy",},"properties":[],"resourceType":"GMRInstance","resourceVersion":"2.0","rotation":0.0,"scaleX":1.0,"scaleY":1.0,"x":1216.0,"y":2048.0,},
+      ],"layers":[],"name":"checkpointLayer","properties":[],"resourceType":"GMRInstanceLayer","resourceVersion":"2.0","userdefinedDepth":false,"visible":true,},
     {"$GMRTileLayer":"","%Name":"structureTiles","depth":200,"effectEnabled":true,"effectType":null,"gridX":32,"gridY":32,"hierarchyFrozen":false,"inheritLayerDepth":false,"inheritLayerSettings":false,"inheritSubLayers":true,"inheritVisibility":true,"layers":[],"name":"structureTiles","properties":[],"resourceType":"GMRTileLayer","resourceVersion":"2.0","tiles":{"SerialiseHeight":94,"SerialiseWidth":188,"TileCompressedData":[
           -11300,-2147483648,1,0,-557,-2147483648,4,0,50,50,0,-120,-2147483648,-11,50,-52,-2147483648,1,0,-4,50,
           1,0,-33,-2147483648,1,50,-83,-2147483648,-14,50,-49,-2147483648,2,0,52,-48,50,-3,-2147483648,-5,50,-5,

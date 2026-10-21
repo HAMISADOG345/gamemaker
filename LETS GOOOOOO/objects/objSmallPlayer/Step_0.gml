@@ -20,11 +20,11 @@
 
 if varLook = 0
 {
-	varSPRIdle = sprVGIdle  //this sprite's mask is used for non-attacking sprites
-	varSPRWalking = sprVGRun
-	varSPRRunning = sprVGRun
-	varSPRJumpUp = sprVGJump
-	varSPRJumpDown = sprVGJump
+	varSPRIdle = sprKaiIdle  //this sprite's mask is used for non-attacking sprites
+	varSPRWalking = sprKaiRun
+	varSPRRunning = sprKaiRun
+	varSPRJumpUp = sprKaiJump
+	varSPRJumpDown = sprKaiFall
 	
 } 
 

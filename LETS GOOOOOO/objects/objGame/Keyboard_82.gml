@@ -1,3 +1,3 @@
-if objSmallPlayer.debug {
+if objKai.debug {
 	game_restart()
 }

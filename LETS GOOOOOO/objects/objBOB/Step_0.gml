@@ -12,7 +12,7 @@ if varRandom = 34 {
 if varRandom = 20 {
 	for (i = 0; i < 40; i++) {
 		var varBlast = instance_create_layer(x,y,"enemies",objFireBall);
-		varBlast.direction = point_direction(x,y,objSmallPlayer.x,objSmallPlayer.y)
+		varBlast.direction = point_direction(x,y,objKai.x,objKai.y)
 		varBlast.speed = irandom_range(1,20)
 	}
 }
@@ -73,16 +73,16 @@ if not varAttacking
 		if varAnnoyence = 1 and varX != x {
 			varAnnoyence = 0
 		} else if varAnnoyence = 1 and varX = x {
-			if objSmallPlayer.x > x {
+			if objKai.x > x {
 				varHSpeed = -varWalkingSpeed
 			}
-			if objSmallPlayer.x < x {
+			if objKai.x < x {
 				varHSpeed = varWalkingSpeed
 			}
 		}
 	}
 	
-	if objSmallPlayer.x = x and objSmallPlayer.y < y{
+	if objKai.x = x and objKai.y < y{
 		if place_meeting(x+16,y,objWall) or place_meeting(x+32,y,objWall) or place_meeting(x+48,y,objWall) or place_meeting(x+64,y,objWall) {
 			varHSpeed = varWalkingSpeed
 		}
@@ -98,7 +98,7 @@ if not varAttacking
 	
 	// if right arrow key down, then set HSpeed to the default Walking Speed
 	// if shift pressed as well, then setup for Running Speed
-if objSmallPlayer.x > x
+if objKai.x > x
 	{
 		varHSpeed = varWalkingSpeed
 		//If you want jumps to be speed up by running, comment out or delete "and not varJumping"
@@ -110,7 +110,7 @@ if objSmallPlayer.x > x
 	}
 
 	// if left arrow key down, then set HSpeed to the negative value of Walking Speed
- if objSmallPlayer.x < x
+ if objKai.x < x
 	{
 		// Reverse by making it negative
 		varHSpeed = -varWalkingSpeed

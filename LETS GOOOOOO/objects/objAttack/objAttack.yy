@@ -1,7 +1,10 @@
 {
   "$GMObject":"",
   "%Name":"objAttack",
-  "eventList":[],
+  "eventList":[
+    {"$GMEvent":"v1","%Name":"","collisionObjectId":null,"eventNum":0,"eventType":3,"isDnD":false,"name":"","resourceType":"GMEvent","resourceVersion":"2.0",},
+    {"$GMEvent":"v1","%Name":"","collisionObjectId":{"name":"objEnemyParent","path":"objects/objEnemyParent/objEnemyParent.yy",},"eventNum":0,"eventType":4,"isDnD":false,"name":"","resourceType":"GMEvent","resourceVersion":"2.0",},
+  ],
   "managed":true,
   "name":"objAttack",
   "overriddenProperties":[],
@@ -27,7 +30,10 @@
   "resourceType":"GMObject",
   "resourceVersion":"2.0",
   "solid":false,
-  "spriteId":null,
+  "spriteId":{
+    "name":"sprAttack",
+    "path":"sprites/sprAttack/sprAttack.yy",
+  },
   "spriteMaskId":null,
   "visible":true,
 }

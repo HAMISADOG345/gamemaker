@@ -31,11 +31,11 @@ if varLook = 0
 
 
 // if not in attacking mode - take care of idle, walking, running, and jumping
-if place_meeting(x-1,y,objSmallPlayer) and not varAttacking and place_meeting(x,y+1,objWall){
+if place_meeting(x-1,y,objKai) and not varAttacking and place_meeting(x,y+1,objWall){
 	varAttacking = true
 	sprite_index = sprVGhitLeft
 }
-if place_meeting(x+1,y,objSmallPlayer) and not varAttacking and place_meeting(x,y+1,objWall){
+if place_meeting(x+1,y,objKai) and not varAttacking and place_meeting(x,y+1,objWall){
 	varAttacking = true
 	sprite_index = sprVGhitRight
 }
@@ -45,7 +45,7 @@ if varAttacking {
 	{
 		// change varAttacking back to false
 		varAttacking = false;
-		if place_meeting(x,y,objSmallPlayer) {
+		if place_meeting(x,y,objKai) {
 			if objGame.canDie {
 				objGame.varHealth -= 10
 			}
@@ -53,14 +53,14 @@ if varAttacking {
 	}
 }
 
-if point_distance(x,y,objSmallPlayer.x,objSmallPlayer.y) < 500 and not varAttacking{
+if point_distance(x,y,objKai.x,objKai.y) < 500 and not varAttacking{
 	if place_meeting(x + 1, y + 0, objWall) or place_meeting(x-1,y,objWall) or place_meeting(x + 1, y + 0, objSpikeParent) or place_meeting(x-1,y,objSpikeParent)
 	{
 		varVSpeed = -varJumpingSpeed
 		varJumping = true
 		varJumps++  // should now be 1
 	}
-	if objSmallPlayer.x > x
+	if objKai.x > x
 	{
 		varHSpeed = varWalkingSpeed
 		//If you want jumps to be speed up by running, comment out or delete "and not varJumping"
@@ -72,7 +72,7 @@ if point_distance(x,y,objSmallPlayer.x,objSmallPlayer.y) < 500 and not varAttack
 	}
 
 	// if left arrow key down, then set HSpeed to the negative value of Walking Speed
-	if objSmallPlayer.x < x
+	if objKai.x < x
 	{
 		// Reverse by making it negative
 		varHSpeed = -varWalkingSpeed
@@ -289,7 +289,7 @@ else // This is animation end logic for any attack sprite
 {
 	
 }
-if objSmallPlayer.debug {
+if objKai.debug {
 	if mouse_x = x and mouse_y = y and keyboard_check(ord("K")) {
 		instance_destroy(self)
 	}

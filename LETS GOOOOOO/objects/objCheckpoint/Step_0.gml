@@ -1,7 +1,7 @@
 image_xscale = 2
 image_yscale = 2
 
-if (!active && point_distance(x, y, objSmallPlayer.x, objSmallPlayer.y) < 50) {
+if (!active && point_distance(x, y, objKai.x, objKai.y) < 50) {
    
     instance_create_layer(x, y, "checkpointLayer", objCheckpointActive);
     active = true;

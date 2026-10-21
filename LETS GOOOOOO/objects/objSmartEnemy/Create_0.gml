@@ -32,7 +32,7 @@ varHSpeed = 0
 varJumps = 0
 vely = 0
 
-image_xscale = irandom_range(1.5,3)
+image_xscale = irandom_range(1.5,2.5)
 image_yscale = image_xscale
 
 varWillSpawnNone = false

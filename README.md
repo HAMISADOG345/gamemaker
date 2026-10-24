@@ -17,3 +17,5 @@ int main() {
     b.winBuild();
     return 0;
 }
+
+CMAKE REQUIRED + GLAD + GLFW + some other built in cpp libaries

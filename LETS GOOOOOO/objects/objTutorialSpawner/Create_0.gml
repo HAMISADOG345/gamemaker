@@ -1,3 +1,3 @@
 amount1st = 10
-tutorial1stspawn = false
+tutorial1stspawn = true
 amount2nd = 3

@@ -45,6 +45,11 @@ if varAttacking {
 	{
 		// change varAttacking back to false
 		varAttacking = false;
+		if place_meeting(x,y,objSmallPlayer) {
+			if objGame.canDie {
+				objGame.varHealth -= 10
+			}
+		}
 	}
 }
 

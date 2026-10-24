@@ -49,6 +49,11 @@ if varAttacking {
 		varAttacking = false;
 		isAttackingzRight = false
 		isAttackingLeft = false
+		if place_meeting(x,y,objSmallPlayer) {
+			if objGame.canDie {
+				objGame.varHealth -= 10
+			}
+		}
 	}
 }
 

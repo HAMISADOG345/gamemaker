@@ -19,3 +19,5 @@ int main() {
 }
 
 CMAKE REQUIRED + GLAD + GLFW + some other built in cpp libaries
+
+should i put only texture shader and no geometry shader to make it gamemaker like?

@@ -4,7 +4,7 @@ wait... who is writing the essay?
 
 __________________________________________________________________________________________________________________________
 
-untitled5 3d engine: a 3d engine build for OBJ that is so simple it can only display a static 3d model
+untitled5 3d engine: a 3d engine built for OBJ that is so simple it can only display a static 3d model
 
 here is some game code:
 
@@ -19,3 +19,5 @@ int main() {
 }
 
 CMAKE REQUIRED + GLAD + GLFW + some other built in cpp libaries
+
+should i put only texture shader and no geometry shader to make it gamemaker like?

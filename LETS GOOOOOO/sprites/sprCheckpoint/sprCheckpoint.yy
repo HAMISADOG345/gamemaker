@@ -25,8 +25,8 @@
   "nineSlice":null,
   "origin":4,
   "parent":{
-    "name":"sprites",
-    "path":"folders/game stuff/checkpoint/sprites.yy",
+    "name":"Other",
+    "path":"folders/Sprites/Other.yy",
   },
   "preMultiplyAlpha":false,
   "resourceType":"GMSprite",

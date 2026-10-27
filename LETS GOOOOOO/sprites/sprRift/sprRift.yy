@@ -29,8 +29,8 @@
   "nineSlice":null,
   "origin":0,
   "parent":{
-    "name":"sprites",
-    "path":"folders/game stuff/rift/sprites.yy",
+    "name":"Enemies and Hazards",
+    "path":"folders/Sprites/Enemies and Hazards.yy",
   },
   "preMultiplyAlpha":false,
   "resourceType":"GMSprite",

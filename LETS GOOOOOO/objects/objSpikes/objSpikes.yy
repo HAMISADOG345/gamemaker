@@ -6,8 +6,8 @@
   "name":"objSpikes",
   "overriddenProperties":[],
   "parent":{
-    "name":"obj",
-    "path":"folders/game stuff/spikes/obj.yy",
+    "name":"Enemies and Hazards",
+    "path":"folders/Objects/Enemies and Hazards.yy",
   },
   "parentObjectId":{
     "name":"objSpikeParent",

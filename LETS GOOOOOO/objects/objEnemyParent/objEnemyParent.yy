@@ -1,13 +1,15 @@
 {
   "$GMObject":"",
   "%Name":"objEnemyParent",
-  "eventList":[],
+  "eventList":[
+    {"$GMEvent":"v1","%Name":"","collisionObjectId":{"name":"objAttack","path":"objects/objAttack/objAttack.yy",},"eventNum":0,"eventType":4,"isDnD":false,"name":"","resourceType":"GMEvent","resourceVersion":"2.0",},
+  ],
   "managed":true,
   "name":"objEnemyParent",
   "overriddenProperties":[],
   "parent":{
-    "name":"parents",
-    "path":"folders/parents.yy",
+    "name":"Parents",
+    "path":"folders/Objects/Parents.yy",
   },
   "parentObjectId":null,
   "persistent":false,

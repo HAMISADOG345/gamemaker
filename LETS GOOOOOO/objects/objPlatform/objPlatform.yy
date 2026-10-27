@@ -6,8 +6,8 @@
   "name":"objPlatform",
   "overriddenProperties":[],
   "parent":{
-    "name":"old stuff",
-    "path":"folders/old stuff.yy",
+    "name":"Other",
+    "path":"folders/Objects/Other.yy",
   },
   "parentObjectId":null,
   "persistent":false,

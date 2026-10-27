@@ -6,8 +6,8 @@
   "name":"objSlope",
   "overriddenProperties":[],
   "parent":{
-    "name":"obj",
-    "path":"folders/wall/obj.yy",
+    "name":"Other",
+    "path":"folders/Objects/Other.yy",
   },
   "parentObjectId":{
     "name":"objWall",

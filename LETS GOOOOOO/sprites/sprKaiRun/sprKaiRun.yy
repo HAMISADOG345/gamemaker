@@ -28,7 +28,7 @@
   "origin":4,
   "parent":{
     "name":"Kai",
-    "path":"folders/player/spr/Kai.yy",
+    "path":"folders/Sprites/Player/Kai.yy",
   },
   "preMultiplyAlpha":false,
   "resourceType":"GMSprite",

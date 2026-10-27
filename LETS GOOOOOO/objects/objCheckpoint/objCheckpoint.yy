@@ -9,8 +9,8 @@
   "name":"objCheckpoint",
   "overriddenProperties":[],
   "parent":{
-    "name":"objects",
-    "path":"folders/game stuff/checkpoint/objects.yy",
+    "name":"Other",
+    "path":"folders/Objects/Other.yy",
   },
   "parentObjectId":null,
   "persistent":false,

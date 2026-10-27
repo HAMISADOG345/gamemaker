@@ -9,8 +9,8 @@
   "name":"objRift",
   "overriddenProperties":[],
   "parent":{
-    "name":"objects",
-    "path":"folders/game stuff/rift/objects.yy",
+    "name":"Enemies and Hazards",
+    "path":"folders/Objects/Enemies and Hazards.yy",
   },
   "parentObjectId":null,
   "persistent":false,

@@ -11,8 +11,8 @@
   "name":"objGame",
   "overriddenProperties":[],
   "parent":{
-    "name":"game",
-    "path":"folders/game stuff/game.yy",
+    "name":"Other",
+    "path":"folders/Objects/Other.yy",
   },
   "parentObjectId":null,
   "persistent":false,
@@ -31,7 +31,7 @@
   "properties":[
     {"$GMObjectProperty":"v2","%Name":"varDeath","filters":[],"listItems":[],"multiselect":false,"name":"varDeath","rangeEnabled":false,"rangeMax":10.0,"rangeMin":0.0,"resourceType":"GMObjectProperty","resourceVersion":"2.0","value":"0.0","varType":0,},
     {"$GMObjectProperty":"v2","%Name":"varHealth","filters":[],"listItems":[],"multiselect":false,"name":"varHealth","rangeEnabled":false,"rangeMax":10.0,"rangeMin":0.0,"resourceType":"GMObjectProperty","resourceVersion":"2.0","value":"100","varType":1,},
-    {"$GMObjectProperty":"v2","%Name":"canDie","filters":[],"listItems":[],"multiselect":false,"name":"canDie","rangeEnabled":false,"rangeMax":10.0,"rangeMin":0.0,"resourceType":"GMObjectProperty","resourceVersion":"2.0","value":"False","varType":3,},
+    {"$GMObjectProperty":"v2","%Name":"canDie","filters":[],"listItems":[],"multiselect":false,"name":"canDie","rangeEnabled":false,"rangeMax":10.0,"rangeMin":0.0,"resourceType":"GMObjectProperty","resourceVersion":"2.0","value":"True","varType":3,},
   ],
   "resourceType":"GMObject",
   "resourceVersion":"2.0",

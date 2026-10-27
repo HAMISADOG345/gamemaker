@@ -10,8 +10,8 @@
   "name":"objCannonRight",
   "overriddenProperties":[],
   "parent":{
-    "name":"objects",
-    "path":"folders/game stuff/cannon/objects.yy",
+    "name":"Enemies and Hazards",
+    "path":"folders/Objects/Enemies and Hazards.yy",
   },
   "parentObjectId":null,
   "persistent":false,

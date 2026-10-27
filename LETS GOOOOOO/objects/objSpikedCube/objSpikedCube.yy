@@ -9,10 +9,13 @@
   "name":"objSpikedCube",
   "overriddenProperties":[],
   "parent":{
-    "name":"spikedCube",
-    "path":"folders/game stuff/spikedCube.yy",
+    "name":"Enemies and Hazards",
+    "path":"folders/Objects/Enemies and Hazards.yy",
   },
-  "parentObjectId":null,
+  "parentObjectId":{
+    "name":"objEnemyParent",
+    "path":"objects/objEnemyParent/objEnemyParent.yy",
+  },
   "persistent":false,
   "physicsAngularDamping":0.1,
   "physicsDensity":0.5,

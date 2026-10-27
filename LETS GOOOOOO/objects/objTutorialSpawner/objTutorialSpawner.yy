@@ -9,8 +9,8 @@
   "name":"objTutorialSpawner",
   "overriddenProperties":[],
   "parent":{
-    "name":"tutorial",
-    "path":"folders/game stuff/tutorial.yy",
+    "name":"Enemies and Hazards",
+    "path":"folders/Sprites/Enemies and Hazards.yy",
   },
   "parentObjectId":null,
   "persistent":false,

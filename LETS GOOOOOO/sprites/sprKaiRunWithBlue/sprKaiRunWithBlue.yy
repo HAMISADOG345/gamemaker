@@ -28,7 +28,7 @@
   "origin":4,
   "parent":{
     "name":"KaiWithBlueInk",
-    "path":"folders/player/spr/KaiWithBlueInk.yy",
+    "path":"folders/Sprites/Player/KaiWithBlueInk.yy",
   },
   "preMultiplyAlpha":false,
   "resourceType":"GMSprite",

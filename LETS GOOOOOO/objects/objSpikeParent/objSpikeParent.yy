@@ -6,8 +6,8 @@
   "name":"objSpikeParent",
   "overriddenProperties":[],
   "parent":{
-    "name":"parents",
-    "path":"folders/parents.yy",
+    "name":"Parents",
+    "path":"folders/Objects/Parents.yy",
   },
   "parentObjectId":null,
   "persistent":false,

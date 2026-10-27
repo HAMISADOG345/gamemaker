@@ -8,8 +8,8 @@
   "name":"objBug",
   "overriddenProperties":[],
   "parent":{
-    "name":"obj",
-    "path":"folders/player/obj.yy",
+    "name":"Player",
+    "path":"folders/Objects/Player.yy",
   },
   "parentObjectId":null,
   "persistent":false,

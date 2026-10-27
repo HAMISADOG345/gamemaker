@@ -2,7 +2,8 @@ if varDeath = true {
 	varDeath = false
 	instance_destroy(objKai)
 	if instance_exists(objCheckpointActive) {
-		instance_create_layer(objCheckpointActive.x,objCheckpointActive.y+10,"riftLayer",objKai)
+		instance_create_layer(objCheckpointActive.x,objCheckpointActive.y,"riftLayer",objKai)
+		varHealth = 100
 	} else {
 		game_restart()
 	}

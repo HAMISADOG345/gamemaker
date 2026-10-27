@@ -14,10 +14,7 @@
     "name":"objects",
     "path":"folders/game stuff/PlayerEnemy/objects.yy",
   },
-  "parentObjectId":{
-    "name":"objEnemyParent",
-    "path":"objects/objEnemyParent/objEnemyParent.yy",
-  },
+  "parentObjectId":null,
   "persistent":false,
   "physicsAngularDamping":0.1,
   "physicsDensity":0.5,

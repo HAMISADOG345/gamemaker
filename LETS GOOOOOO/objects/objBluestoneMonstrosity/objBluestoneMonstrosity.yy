@@ -12,8 +12,8 @@
   "name":"objBluestoneMonstrosity",
   "overriddenProperties":[],
   "parent":{
-    "name":"Enemies and Hazards",
-    "path":"folders/Objects/Enemies and Hazards.yy",
+    "name":"bluestoneMonstrosity",
+    "path":"folders/Objects/bluestoneMonstrosity.yy",
   },
   "parentObjectId":{
     "name":"objEnemyParent",

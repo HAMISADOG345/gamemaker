@@ -37,6 +37,7 @@
   "name":"LETS GOOOOOO",
   "resources":[
     {"id":{"name":"objAttack","path":"objects/objAttack/objAttack.yy",},},
+    {"id":{"name":"objBluestoneMonstrosity","path":"objects/objBluestoneMonstrosity/objBluestoneMonstrosity.yy",},},
     {"id":{"name":"objBug","path":"objects/objBug/objBug.yy",},},
     {"id":{"name":"objCannon","path":"objects/objCannon/objCannon.yy",},},
     {"id":{"name":"objCannonRight","path":"objects/objCannonRight/objCannonRight.yy",},},
@@ -68,6 +69,8 @@
     {"id":{"name":"rmLevel1","path":"rooms/rmLevel1/rmLevel1.yy",},},
     {"id":{"name":"bug","path":"sprites/bug/bug.yy",},},
     {"id":{"name":"sprAttack","path":"sprites/sprAttack/sprAttack.yy",},},
+    {"id":{"name":"sprblustoneIdle","path":"sprites/sprblustoneIdle/sprblustoneIdle.yy",},},
+    {"id":{"name":"sprblustoneWalk","path":"sprites/sprblustoneWalk/sprblustoneWalk.yy",},},
     {"id":{"name":"sprCannon","path":"sprites/sprCannon/sprCannon.yy",},},
     {"id":{"name":"sprCheckpoint","path":"sprites/sprCheckpoint/sprCheckpoint.yy",},},
     {"id":{"name":"sprCheckpointActive","path":"sprites/sprCheckpointActive/sprCheckpointActive.yy",},},

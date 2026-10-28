@@ -51,7 +51,7 @@ if varAttacking {
 		isAttackingLeft = false
 		if place_meeting(x,y,objKai) {
 			if objGame.canDie {
-				objGame.varHealth -= 10
+				objGame.varHealth -= 100
 			}
 		}
 	}
@@ -179,6 +179,48 @@ if not varAttacking
 		{
 		
 			if not place_meeting(x + 0, y + sign(varVSpeed), objWall)
+			{
+				y += sign(varVSpeed)
+			}
+			else
+			{
+				varCollide = true
+				varVSpeed = 0
+			}
+		}
+	}
+	
+	if place_meeting(x + 0, y + varVSpeed, objWall) 
+	{
+		var varCollide = false;
+		varJumping = false;  // set varJumping to false - useful variable in outside places
+		varJumps = 0  // reset to zero for double jumps
+	
+		while ((varCollide == false))
+		{
+		
+			if not place_meeting(x + 0, y + sign(varVSpeed), objWall)
+			{
+				y += sign(varVSpeed)
+			}
+			else
+			{
+				varCollide = true
+				varVSpeed = 0
+			}
+		}
+	}
+	
+	if place_meeting(x + 0, y + varVSpeed, objBluestoneMonstrosity.bbox_top) 
+	{
+		var varCollide = false;
+		varJumping = false;  // set varJumping to false - useful variable in outside places
+		varJumps = 0  // reset to zero for double jumps
+	
+		while ((varCollide == false))
+		{
+		
+			if not place_meeting(x + 0, y + sign(varVSpeed), objBluestoneMonstrosity.bbox_top)
 			{
 				y += sign(varVSpeed)
 			}

@@ -28,8 +28,8 @@
   "nineSlice":null,
   "origin":0,
   "parent":{
-    "name":"bluestoneMonstrosity",
-    "path":"folders/Sprites/bluestoneMonstrosity.yy",
+    "name":"BluestoneMonstrosity",
+    "path":"folders/Sprites/BluestoneMonstrosity.yy",
   },
   "preMultiplyAlpha":false,
   "resourceType":"GMSprite",

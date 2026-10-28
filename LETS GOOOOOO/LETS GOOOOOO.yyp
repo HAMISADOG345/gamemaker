@@ -79,7 +79,6 @@
     {"id":{"name":"sprInvisibleWall32x32","path":"sprites/sprInvisibleWall32x32/sprInvisibleWall32x32.yy",},},
     {"id":{"name":"sprInvisibleWallHMoving","path":"sprites/sprInvisibleWallHMoving/sprInvisibleWallHMoving.yy",},},
     {"id":{"name":"sprInvisibleWallVMoving","path":"sprites/sprInvisibleWallVMoving/sprInvisibleWallVMoving.yy",},},
-    {"id":{"name":"Sprite45","path":"sprites/Sprite45/Sprite45.yy",},},
     {"id":{"name":"sprKaiFall","path":"sprites/sprKaiFall/sprKaiFall.yy",},},
     {"id":{"name":"sprKaiFallWithBlue","path":"sprites/sprKaiFallWithBlue/sprKaiFallWithBlue.yy",},},
     {"id":{"name":"sprKaiIdle","path":"sprites/sprKaiIdle/sprKaiIdle.yy",},},

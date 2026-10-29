@@ -27,6 +27,8 @@ if varLook = 0
 	varSPRJumpDown = sprVGzFallHelmet
 	varSPRHitLeft = sprVGhitLeftHelmet
 	varSPRHitRight = sprVGhitRightHelmet
+	varSPRSummon = sprblustoneSummon
+	varSPRstomp = sprbluestoneStomp
 } 
 
 
@@ -43,28 +45,64 @@ if place_meeting(x+1,y,objKai) and not varAttacking and place_meeting(x,y+1,objW
 }
 
 if varAttacking {
-	if(image_index >= image_number-1)
-	{
-		// change varAttacking back to false
-		varAttacking = false;
-		isAttackingzRight = false
-		isAttackingLeft = false
-		if place_meeting(x,y,objKai) {
-			if objGame.canDie {
-				objGame.varHealth -= 100
+	if attackRarity = 1 {
+		sprite_index = varSPRSummon
+		if(image_index >= image_number-1)
+		{
+			// change varAttacking back to false
+			varAttacking = false;
+			isAttackingzRight = false
+			isAttackingLeft = false
+			attackRarity = irandom_range(1,10)
+			if place_meeting(x,y,objKai) {
+				if objGame.canDie {
+					objGame.varHealth -= 100
+				}
+			}
+		}
+	} else if attackRarity = 2 or 3 {
+			sprite_index = varSPRstomp
+			if(image_index >= image_number-1)
+			{
+				// change varAttacking back to false
+				varAttacking = false;
+				isAttackingzRight = false
+				isAttackingLeft = false
+				attackRarity = irandom_range(1,10)
+				if place_meeting(x,y,objKai) {
+					if objGame.canDie {
+						objGame.varHealth -= 50
+					}
+				}
+		}
+	}else{
+		if(image_index >= image_number-1)
+		{
+			// change varAttacking back to false
+			varAttacking = false;
+			isAttackingzRight = false
+			isAttackingLeft = false
+			attackRarity = irandom_range(1,10)
+			if place_meeting(x,y,objKai) {
+				if objGame.canDie {
+					objGame.varHealth -= 25
+				}
 			}
 		}
 	}
 }
 
-if point_distance(x,y,objKai.x,objKai.y) < 500 and not varAttacking{
+if point_distance(x,y,objKai.x,objKai.y) < 700 and not varAttacking{
 	if place_meeting(x + 1, y + 0, objWall) or place_meeting(x-1,y,objWall) or place_meeting(x + 1, y + 0, objSpikeParent) or place_meeting(x-1,y,objSpikeParent)
 	{
 		varVSpeed = -varJumpingSpeed
 		varJumping = true
 		varJumps++  // should now be 1
 	}
-	if objKai.x > x
+	
+	if place_meeting(x,y,objKai) and objKai.x = x {
+	varAttacking = true
+}else if objKai.x > x
 	{
 		varHSpeed = varWalkingSpeed
 		//If you want jumps to be speed up by running, comment out or delete "and not varJumping"
@@ -73,10 +111,7 @@ if point_distance(x,y,objKai.x,objKai.y) < 500 and not varAttacking{
 			varHSpeed = varRunningSpeed
 			varRunning = true
 		}
-	}
-
-	// if left arrow key down, then set HSpeed to the negative value of Walking Speed
-	if objKai.x < x
+	}else if objKai.x < x
 	{
 		// Reverse by making it negative
 		varHSpeed = -varWalkingSpeed

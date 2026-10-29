@@ -9,7 +9,7 @@
 // locations of the game to impact player behavior
 varWalkingSpeed = 5	// sets the walking speed
 varRunningSpeed = 10		// sets the running speed
-varJumpingSpeed = irandom_range(5,10)     	// sets the jumping speed
+varJumpingSpeed = 5    	// sets the jumping speed
 varGravity = 0.4			// sets the gravity
 varDrag = 0.3				// sets the drag - how fast a character slows
 varRunningJumps = true		// set to false if you dont want runnning speed to be used in jumps
@@ -48,6 +48,8 @@ isStaying = false
 armorSpriteScale = image_xscale
 
 tutorial = false
+
+attackRarity = 8
 
 
 

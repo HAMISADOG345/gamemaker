@@ -22,3 +22,7 @@ if varDeath = true {
 if varHealth <= 0 and canDie {
 	varDeath = true
 }
+
+if canDie = false {
+	varHealth+=1000
+}

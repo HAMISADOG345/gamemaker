@@ -19,6 +19,7 @@
     {"$GMFolder":"","%Name":"Rooms","folderPath":"folders/Rooms.yy","name":"Rooms","resourceType":"GMFolder","resourceVersion":"2.0",},
     {"$GMFolder":"","%Name":"Sprites","folderPath":"folders/Sprites.yy","name":"Sprites","resourceType":"GMFolder","resourceVersion":"2.0",},
     {"$GMFolder":"","%Name":"BluestoneMonstrosity","folderPath":"folders/Sprites/BluestoneMonstrosity.yy","name":"BluestoneMonstrosity","resourceType":"GMFolder","resourceVersion":"2.0",},
+    {"$GMFolder":"","%Name":"bluestoneConstruct","folderPath":"folders/Sprites/BluestoneMonstrosity/bluestoneConstruct.yy","name":"bluestoneConstruct","resourceType":"GMFolder","resourceVersion":"2.0",},
     {"$GMFolder":"","%Name":"Enemies and Hazards","folderPath":"folders/Sprites/Enemies and Hazards.yy","name":"Enemies and Hazards","resourceType":"GMFolder","resourceVersion":"2.0",},
     {"$GMFolder":"","%Name":"Other","folderPath":"folders/Sprites/Other.yy","name":"Other","resourceType":"GMFolder","resourceVersion":"2.0",},
     {"$GMFolder":"","%Name":"Player","folderPath":"folders/Sprites/Player.yy","name":"Player","resourceType":"GMFolder","resourceVersion":"2.0",},
@@ -50,6 +51,7 @@
   "name":"LETS GOOOOOO",
   "resources":[
     {"id":{"name":"objAttack","path":"objects/objAttack/objAttack.yy",},},
+    {"id":{"name":"objbluestoneConstruct","path":"objects/objbluestoneConstruct/objbluestoneConstruct.yy",},},
     {"id":{"name":"objBluestoneMonstrosity","path":"objects/objBluestoneMonstrosity/objBluestoneMonstrosity.yy",},},
     {"id":{"name":"objBug","path":"objects/objBug/objBug.yy",},},
     {"id":{"name":"objCannon","path":"objects/objCannon/objCannon.yy",},},
@@ -80,9 +82,13 @@
     {"id":{"name":"objWallHorizontalMoving","path":"objects/objWallHorizontalMoving/objWallHorizontalMoving.yy",},},
     {"id":{"name":"objWallVerticalMoving","path":"objects/objWallVerticalMoving/objWallVerticalMoving.yy",},},
     {"id":{"name":"rmLevel1","path":"rooms/rmLevel1/rmLevel1.yy",},},
+    {"id":{"name":"rmLevelHorror","path":"rooms/rmLevelHorror/rmLevelHorror.yy",},},
     {"id":{"name":"bug","path":"sprites/bug/bug.yy",},},
     {"id":{"name":"sprAttack","path":"sprites/sprAttack/sprAttack.yy",},},
+    {"id":{"name":"sprBluestoneConstruct","path":"sprites/sprBluestoneConstruct/sprBluestoneConstruct.yy",},},
+    {"id":{"name":"sprbluestoneStomp","path":"sprites/sprbluestoneStomp/sprbluestoneStomp.yy",},},
     {"id":{"name":"sprblustoneIdle","path":"sprites/sprblustoneIdle/sprblustoneIdle.yy",},},
+    {"id":{"name":"sprblustoneSummon","path":"sprites/sprblustoneSummon/sprblustoneSummon.yy",},},
     {"id":{"name":"sprblustoneWalk","path":"sprites/sprblustoneWalk/sprblustoneWalk.yy",},},
     {"id":{"name":"sprCannon","path":"sprites/sprCannon/sprCannon.yy",},},
     {"id":{"name":"sprCheckpoint","path":"sprites/sprCheckpoint/sprCheckpoint.yy",},},
@@ -132,6 +138,7 @@
   "resourceVersion":"2.0",
   "RoomOrderNodes":[
     {"roomId":{"name":"rmLevel1","path":"rooms/rmLevel1/rmLevel1.yy",},},
+    {"roomId":{"name":"rmLevelHorror","path":"rooms/rmLevelHorror/rmLevelHorror.yy",},},
   ],
   "templateType":"game",
   "TextureGroups":[

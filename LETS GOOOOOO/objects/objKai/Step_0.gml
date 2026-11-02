@@ -40,7 +40,7 @@ if varHasJetPack = false
 	// if space bar pressed, then jump
 	// if you want to use the up arrow instead of vk_space use vk_up or use both like this
 	// if keyboard_check_pressed(vk_space) or keyboard_check_pressed(vk_up)
-	if keyboard_check_pressed(vk_space)
+	if keyboard_check_pressed(vk_up)
 	{
 		// This block prevents jumping higher and higher
 		// So it checks that the player is in contact with a block below before
@@ -63,16 +63,17 @@ if varHasJetPack = false
 	// if shift pressed as well, then setup for Running Speed
 	if keyboard_check(vk_right) or keyboard_check(ord("D"))
 	{
-		varHSpeed = varWalkingSpeed
-		//If you want jumps to be speed up by running, comment out or delete "and not varJumping"
-		if keyboard_check(vk_shift) and ((not varJumping and not varRunningJumps) or varRunningJumps)
-		{
-			varHSpeed = varRunningSpeed
-			varRunning = true
-		}
-		if place_meeting(x+1,y+1,objSlope){
-			y-=varHSpeed/2
-		}
+			varRslideCool = 10
+			varHSpeed = varWalkingSpeed
+			//If you want jumps to be speed up by running, comment out or delete "and not varJumping"
+			if keyboard_check(vk_shift) and ((not varJumping and not varRunningJumps) or varRunningJumps)
+			{
+				varHSpeed = varRunningSpeed
+				varRunning = true
+			}
+			if place_meeting(x+1,y+1,objSlope){
+				y-=varHSpeed/2
+			}
 	}
 
 	// if left arrow key down, then set HSpeed to the negative value of Walking Speed

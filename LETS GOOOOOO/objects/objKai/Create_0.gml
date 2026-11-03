@@ -8,14 +8,17 @@
 // The following set of varibles can be changed here by the developer or in other
 // locations of the game to impact player behavior
 varWalkingSpeed = 10		// sets the walking speed
-varRunningSpeed = 15		// sets the running speed
+varRunningSpeed = 20		// sets the running speed
 varJumpingSpeed = 10     	// sets the jumping speed
 varGravity = 0.4			// sets the gravity
 varDrag = 0.3				// sets the drag - how fast a character slows
 varRunningJumps = true		// set to false if you dont want runnning speed to be used in jumps
 varDoubleJumps = false		// set to false if you dont want double jump
 varAttacking = false		// used for attacking
-varLook = 0					// determines which look the character starts with
+varLook = 0	
+varLslidecool = 20
+varRslideCool = 10
+varRslideWait = 10// determines which look the character starts with
 
 
 //These variables are maintained by the step event

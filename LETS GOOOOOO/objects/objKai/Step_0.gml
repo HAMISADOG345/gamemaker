@@ -73,6 +73,7 @@ if varHasJetPack = false
 		if place_meeting(x+1,y+1,objSlope){
 			y-=varHSpeed/2
 		}
+		varDirection = false
 	}
 
 	// if left arrow key down, then set HSpeed to the negative value of Walking Speed
@@ -89,6 +90,7 @@ if varHasJetPack = false
 		if place_meeting(x-1,y+1,objSlope){
 			y+=varHSpeed/2
 		}
+		varDirection = true
 	}
 
 	// Now that the vertical and horizontal speeds have been set above, adjust for gravity

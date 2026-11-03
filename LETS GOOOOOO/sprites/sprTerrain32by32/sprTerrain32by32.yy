@@ -26,7 +26,7 @@
   "origin":0,
   "parent":{
     "name":"ts32",
-    "path":"folders/tiles/ts32.yy",
+    "path":"folders/Tiles/ts32.yy",
   },
   "preMultiplyAlpha":false,
   "resourceType":"GMSprite",

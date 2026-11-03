@@ -13,7 +13,7 @@
   "out_tilevborder":2,
   "parent":{
     "name":"ts32",
-    "path":"folders/tiles/ts32.yy",
+    "path":"folders/Tiles/ts32.yy",
   },
   "resourceType":"GMTileSet",
   "resourceVersion":"2.0",

@@ -60,8 +60,8 @@
   },
   "origin":0,
   "parent":{
-    "name":"Enemies and Hazards",
-    "path":"folders/Sprites/Enemies and Hazards.yy",
+    "name":"Hazards",
+    "path":"folders/Sprites/Enemies and Hazards/Hazards.yy",
   },
   "preMultiplyAlpha":false,
   "resourceType":"GMSprite",

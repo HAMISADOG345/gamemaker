@@ -15,7 +15,10 @@
     "name":"Player",
     "path":"folders/Objects/Player.yy",
   },
-  "parentObjectId":null,
+  "parentObjectId":{
+    "name":"objWall",
+    "path":"objects/objWall/objWall.yy",
+  },
   "persistent":false,
   "physicsAngularDamping":0.1,
   "physicsDensity":0.5,

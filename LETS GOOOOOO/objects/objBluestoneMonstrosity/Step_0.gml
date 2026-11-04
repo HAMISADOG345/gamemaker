@@ -22,11 +22,11 @@ if varLook = 0
 {
 	varSPRIdle = sprblustoneIdle  //this sprite's mask is used for non-attacking sprites
 	varSPRWalking = sprblustoneWalk
-	varSPRRunning = sprVGRunHelmet
-	varSPRJumpUp = sprVGJumpHelmet
-	varSPRJumpDown = sprVGzFallHelmet
-	varSPRHitLeft = sprVGhitLeftHelmet
-	varSPRHitRight = sprVGhitRightHelmet
+	varSPRRunning = sprEnemyRunHelmet
+	varSPRJumpUp = sprEnemyJumpHelmet
+	varSPRJumpDown = sprEnemyFallHelmet
+	varSPRHitLeft = sprEnemyAttackLeftHelmet
+	varSPRHitRight = sprEnemyAttackRightHelmet
 	varSPRSummon = sprblustoneSummon
 	varSPRstomp = sprbluestoneStomp
 } 
@@ -300,7 +300,7 @@ if not varAttacking
 				return //no sprite
 			} else {
 				if hasHelemet = true {
-					draw_sprite_ext(sprVGJumpHelmet, image_index, x, y, armorSpriteScale, armorSpriteScale, 0, c_white, 1)
+					draw_sprite_ext(sprEnemyJumpHelmet, image_index, x, y, armorSpriteScale, armorSpriteScale, 0, c_white, 1)
 				} else if hasChestplate = true {
 					return //no sprite
 				} else {
@@ -317,7 +317,7 @@ if not varAttacking
 				return //no sprite
 			} else {
 				if hasHelemet = true {
-					draw_sprite_ext(sprVGzFallHelmet, image_index, x, y, armorSpriteScale, armorSpriteScale, 0, c_white, 1)
+					draw_sprite_ext(sprEnemyFallHelmet, image_index, x, y, armorSpriteScale, armorSpriteScale, 0, c_white, 1)
 				} else if hasChestplate = true {
 					return //no sprite
 				} else {
@@ -357,7 +357,7 @@ if not varAttacking
 					return //no sprite
 				} else {
 					if hasHelemet = true {
-						draw_sprite_ext(sprVGRunHelmet, image_index, x, y, armorSpriteScale, armorSpriteScale, 0, c_white, 1)
+						draw_sprite_ext(sprEnemyRunHelmet, image_index, x, y, armorSpriteScale, armorSpriteScale, 0, c_white, 1)
 					} else if hasChestplate = true {
 						return //no sprite
 					} else {
@@ -402,7 +402,7 @@ if not varAttacking
 					return //no sprite
 				} else {
 					if hasHelemet = true {
-						draw_sprite_ext(sprVGIdleHelmet, image_index, x, y, armorSpriteScale, armorSpriteScale, 0, c_white, 1)
+						draw_sprite_ext(sprEnemyIdleHelmet, image_index, x, y, armorSpriteScale, armorSpriteScale, 0, c_white, 1)
 					} else if hasChestplate = true {
 						return //no sprite
 					} else {

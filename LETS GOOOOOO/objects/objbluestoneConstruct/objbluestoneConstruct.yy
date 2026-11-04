@@ -36,8 +36,8 @@
   "resourceVersion":"2.0",
   "solid":false,
   "spriteId":{
-    "name":"sprVGIdle_1",
-    "path":"sprites/sprVGIdle_1/sprVGIdle_1.yy",
+    "name":"sprEnemyIdle",
+    "path":"sprites/sprEnemyIdle/sprEnemyIdle.yy",
   },
   "spriteMaskId":null,
   "visible":true,

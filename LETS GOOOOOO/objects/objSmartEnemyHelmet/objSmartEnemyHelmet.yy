@@ -36,8 +36,8 @@
   "resourceVersion":"2.0",
   "solid":false,
   "spriteId":{
-    "name":"sprVGIdleHelmet",
-    "path":"sprites/sprVGIdleHelmet/sprVGIdleHelmet.yy",
+    "name":"sprEnemyIdleHelmet",
+    "path":"sprites/sprEnemyIdleHelmet/sprEnemyIdleHelmet.yy",
   },
   "spriteMaskId":null,
   "visible":true,

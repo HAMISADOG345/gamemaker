@@ -54,7 +54,7 @@ if varAttacking {
 }
 
 if point_distance(x,y,objKai.x,objKai.y) < 500 and not varAttacking{
-	if place_meeting(x + 1, y + 0, objWall) or place_meeting(x-1,y,objWall) or place_meeting(x + 1, y + 0, objSpikeParent) or place_meeting(x-1,y,objSpikeParent)
+	if place_meeting(x + 1, y + 0, objWall) or place_meeting(x-1,y,objWall) or place_meeting(x + 1, y + 0, objSpikeParent) or place_meeting(x-1,y,objSpikeParent) or place_meeting(x + 1, y + 0, objJumpObject) or place_meeting(x-1,y,objJumpObject)
 	{
 		varVSpeed = -varJumpingSpeed
 		varJumping = true

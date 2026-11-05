@@ -32,8 +32,8 @@ varHSpeed = 0
 varJumps = 0
 vely = 0
 
-image_xscale = 7
-image_yscale = image_xscale
+image_xscale = -7
+image_yscale = 7
 
 hasHelemet = false
 hasChestplate = false
@@ -51,9 +51,7 @@ tutorial = false
 
 attackRarity = 8
 
-
-
-
+instance_create_layer(x,y,"entityGlow",objBluestoneMonGlow)
 
 
 

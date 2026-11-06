@@ -1,1 +1,0 @@
-stopCPParticle = 20

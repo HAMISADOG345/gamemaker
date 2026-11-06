@@ -1,2 +1,0 @@
-Invis = false
-active = false

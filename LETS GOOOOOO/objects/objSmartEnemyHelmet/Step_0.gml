@@ -20,13 +20,13 @@
 
 if varLook = 0
 {
-	varSPRIdle = sprEnemyIdleHelmet  //this sprite's mask is used for non-attacking sprites
-	varSPRWalking = sprEnemyRunHelmet
-	varSPRRunning = sprEnemyRunHelmet
-	varSPRJumpUp = sprEnemyJumpHelmet
-	varSPRJumpDown = sprEnemyFallHelmet
-	varSPRHitLeft = sprEnemyAttackLeftHelmet
-	varSPRHitRight = sprEnemyAttackRightHelmet
+	varSPRIdle = sprVGIdleHelmet  //this sprite's mask is used for non-attacking sprites
+	varSPRWalking = sprVGRunHelmet
+	varSPRRunning = sprVGRunHelmet
+	varSPRJumpUp = sprVGJumpHelmet
+	varSPRJumpDown = sprVGzFallHelmet
+	varSPRHitLeft = sprVGhitLeftHelmet
+	varSPRHitRight = sprVGhitRightHelmet
 } 
 
 
@@ -150,6 +150,16 @@ if not varAttacking
 		}
 	}
 	
+	if (place_meeting(x + 1, y, objEnemyWall) && objKai.x > x) {
+	    varHSpeed = 0;
+	    sprite_index = varSPRIdle;
+	}
+	
+	if (place_meeting(x - 1, y, objEnemyWall) && objKai.x < x) {
+	    varHSpeed = 0;
+	    sprite_index = varSPRIdle;
+	}
+	
 	x += varHSpeed
 	
 	// Horizontal Moving Wall Logic
@@ -223,7 +233,7 @@ if not varAttacking
 				return //no sprite
 			} else {
 				if hasHelemet = true {
-					draw_sprite_ext(sprEnemyJumpHelmet, image_index, x, y, armorSpriteScale, armorSpriteScale, 0, c_white, 1)
+					draw_sprite_ext(sprVGJumpHelmet, image_index, x, y, armorSpriteScale, armorSpriteScale, 0, c_white, 1)
 				} else if hasChestplate = true {
 					return //no sprite
 				} else {
@@ -240,7 +250,7 @@ if not varAttacking
 				return //no sprite
 			} else {
 				if hasHelemet = true {
-					draw_sprite_ext(sprEnemyFallHelmet, image_index, x, y, armorSpriteScale, armorSpriteScale, 0, c_white, 1)
+					draw_sprite_ext(sprVGzFallHelmet, image_index, x, y, armorSpriteScale, armorSpriteScale, 0, c_white, 1)
 				} else if hasChestplate = true {
 					return //no sprite
 				} else {
@@ -280,7 +290,7 @@ if not varAttacking
 					return //no sprite
 				} else {
 					if hasHelemet = true {
-						draw_sprite_ext(sprEnemyRunHelmet, image_index, x, y, armorSpriteScale, armorSpriteScale, 0, c_white, 1)
+						draw_sprite_ext(sprVGRunHelmet, image_index, x, y, armorSpriteScale, armorSpriteScale, 0, c_white, 1)
 					} else if hasChestplate = true {
 						return //no sprite
 					} else {
@@ -325,7 +335,7 @@ if not varAttacking
 					return //no sprite
 				} else {
 					if hasHelemet = true {
-						draw_sprite_ext(sprEnemyIdleHelmet, image_index, x, y, armorSpriteScale, armorSpriteScale, 0, c_white, 1)
+						draw_sprite_ext(sprVGIdleHelmet, image_index, x, y, armorSpriteScale, armorSpriteScale, 0, c_white, 1)
 					} else if hasChestplate = true {
 						return //no sprite
 					} else {

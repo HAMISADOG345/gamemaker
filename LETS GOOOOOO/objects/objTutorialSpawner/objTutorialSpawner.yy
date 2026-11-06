@@ -10,7 +10,7 @@
   "overriddenProperties":[],
   "parent":{
     "name":"Enemies and Hazards",
-    "path":"folders/Objects/Enemies and Hazards.yy",
+    "path":"folders/Sprites/Enemies and Hazards.yy",
   },
   "parentObjectId":null,
   "persistent":false,

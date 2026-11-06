@@ -1,7 +1,7 @@
 despawnCounter--
 
 if despawnCounter < 0 {
-	instance_create_layer(x,y,"riftLayer",objRiftClose)
+	instance_create_layer(x,y,"EntityGlow",objRiftClose)
 	instance_destroy(self)
 }
 

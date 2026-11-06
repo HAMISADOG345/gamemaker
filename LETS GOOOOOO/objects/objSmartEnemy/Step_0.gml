@@ -20,24 +20,24 @@
 
 if varLook = 0
 {
-	varSPRIdle = sprEnemyIdle  //this sprite's mask is used for non-attacking sprites
-	varSPRWalking = sprEnemyRun
-	varSPRRunning = sprEnemyRun
-	varSPRJumpUp = sprEnemyJump
-	varSPRJumpDown = sprEnemyFall
-	varSPRHitLeft = sprEnemyAttackLeft
-	varSPRHitRight = sprEnemyAttackRight
+	varSPRIdle = sprVGIdle_1  //this sprite's mask is used for non-attacking sprites
+	varSPRWalking = sprVGRun_1
+	varSPRRunning = sprVGRun_1
+	varSPRJumpUp = sprVGJump_2
+	varSPRJumpDown = sprVGzFall_3
+	varSPRHitLeft = sprVGhitLeft
+	varSPRHitRight = sprVGhitRight
 } 
 
 
 // if not in attacking mode - take care of idle, walking, running, and jumping
 if place_meeting(x-1,y,objKai) and not varAttacking and place_meeting(x,y+1,objWall){
 	varAttacking = true
-	sprite_index = sprEnemyAttackLeft
+	sprite_index = sprVGhitLeft
 }
 if place_meeting(x+1,y,objKai) and not varAttacking and place_meeting(x,y+1,objWall){
 	varAttacking = true
-	sprite_index = sprEnemyAttackRight
+	sprite_index = sprVGhitRight
 }
 
 if varAttacking {
@@ -54,7 +54,7 @@ if varAttacking {
 }
 
 if point_distance(x,y,objKai.x,objKai.y) < 500 and not varAttacking{
-	if place_meeting(x + 1, y + 0, objWall) or place_meeting(x-1,y,objWall) or place_meeting(x + 1, y + 0, objSpikeParent) or place_meeting(x-1,y,objSpikeParent)
+	if place_meeting(x + 1, y + 0, objWall) or place_meeting(x-1,y,objWall) or place_meeting(x + 1, y + 0, objSpikeParent) or place_meeting(x-1,y,objSpikeParent) or place_meeting(x + 1, y + 0, objJumpObject) or place_meeting(x-1,y,objJumpObject)
 	{
 		varVSpeed = -varJumpingSpeed
 		varJumping = true

@@ -28,8 +28,8 @@
   "nineSlice":null,
   "origin":4,
   "parent":{
-    "name":"Enemies",
-    "path":"folders/Sprites/Enemies and Hazards/Enemies.yy",
+    "name":"Enemies and Hazards",
+    "path":"folders/Sprites/Enemies and Hazards.yy",
   },
   "preMultiplyAlpha":false,
   "resourceType":"GMSprite",

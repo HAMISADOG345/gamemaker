@@ -1,2 +1,4 @@
 //spike
-objGame.varDeath = true
+if objGame.canDie = true {
+	objGame.varDeath = true
+}

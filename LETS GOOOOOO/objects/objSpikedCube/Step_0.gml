@@ -153,18 +153,6 @@ if not varAttacking
 		}
 	}
 	
-	if (place_meeting(x + 1, y, objEnemyWall) && objKai.x > x) {
-	    varHSpeed = 0;
-	    sprite_index = varSPRIdle;
-		image_angle = 0
-	}
-	
-	if (place_meeting(x - 1, y, objEnemyWall) && objKai.x < x) {
-	    varHSpeed = 0;
-	    sprite_index = varSPRIdle;
-		image_angle = 0
-	}
-	
 	x += varHSpeed
 	
 	// Horizontal Moving Wall Logic

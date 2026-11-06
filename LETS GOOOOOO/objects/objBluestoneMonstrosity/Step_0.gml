@@ -20,67 +20,77 @@
 
 if varLook = 0
 {
-	varSPRIdle = sprblustoneIdle
+	varSPRIdle = sprblustoneIdle  //this sprite's mask is used for non-attacking sprites
 	varSPRWalking = sprblustoneWalk
-	varSPRRunning = sprVGRunHelmet
-	varSPRJumpUp = sprblustoneWalk
-	varSPRJumpDown = sprblustoneWalk
-	varSPRHitLeft = sprVGhitLeftHelmet
-	varSPRHitRight = sprVGhitRightHelmet
+	varSPRRunning = sprEnemyRunHelmet
+	varSPRJumpUp = sprEnemyJumpHelmet
+	varSPRJumpDown = sprEnemyFallHelmet
+	varSPRHitLeft = sprEnemyAttackLeftHelmet
+	varSPRHitRight = sprEnemyAttackRightHelmet
 	varSPRSummon = sprblustoneSummon
 	varSPRstomp = sprbluestoneStomp
 } 
 
 
-if (place_meeting(x-1, y, objKai) && !varAttacking && place_meeting(x, y+1, objWall)) {
-    varAttacking = true
-    isAttackingLeft = true
-    isAttackingzRight = false
-    sprite_index = varSPRHitLeft 
+// if not in attacking mode - take care of idle, walking, running, and jumping
+if place_meeting(x-1,y,objKai) and not varAttacking and place_meeting(x,y+1,objWall){
+	varAttacking = true
+	isAttackingLeft = true
+	sprite_index = varSPRHitLeft
 }
-if (place_meeting(x+1, y, objKai) && !varAttacking && place_meeting(x, y+1, objWall)) {
-    varAttacking = true
-    isAttackingzRight = true
-    isAttackingLeft = false
-    sprite_index = varSPRHitRight;
-}
-
-if (varAttacking) {
-    if (attackRarity == 1) {
-        sprite_index = varSPRSummon;
-        if (image_index >= image_number - 1) {
-            varAttacking = false
-            isAttackingzRight = false
-            isAttackingLeft = false
-            attackRarity = irandom_range(1, 10)
-            if (place_meeting(x, y, objKai) && objGame.canDie) {
-                objGame.varHealth -= 100
-            }
-        }
-    } 
-    else if (attackRarity == 2 || attackRarity == 3) {
-        sprite_index = varSPRstomp;
-        if (image_index >= image_number - 1) {
-            varAttacking = false
-            isAttackingzRight = false
-            isAttackingLeft = false
-            attackRarity = irandom_range(1, 10)
-            if (place_meeting(x, y, objKai) && objGame.canDie) {
-                objGame.varHealth -= 50
-            }
-        }
-    }
-    else {
-        if (image_index >= image_number - 1) {
-            varAttacking = false
-            isAttackingzRight = false
-            isAttackingLeft = false
-            attackRarity = irandom_range(1, 10)
-        }
-    }
+if place_meeting(x+1,y,objKai) and not varAttacking and place_meeting(x,y+1,objWall){
+	varAttacking = true
+	isAttackingzRight = true
+	sprite_index = varSPRHitRight
 }
 
-
+if varAttacking {
+	if attackRarity = 1 {
+		sprite_index = varSPRSummon
+		if(image_index >= image_number-1)
+		{
+			// change varAttacking back to false
+			varAttacking = false;
+			isAttackingzRight = false
+			isAttackingLeft = false
+			attackRarity = irandom_range(1,10)
+			if place_meeting(x,y,objKai) {
+				if objGame.canDie {
+					objGame.varHealth -= 100
+				}
+			}
+		}
+	} else if attackRarity = 2 or 3 {
+			sprite_index = varSPRstomp
+			if(image_index >= image_number-1)
+			{
+				// change varAttacking back to false
+				varAttacking = false;
+				isAttackingzRight = false
+				isAttackingLeft = false
+				attackRarity = irandom_range(1,10)
+				if place_meeting(x,y,objKai) {
+					if objGame.canDie {
+						objGame.varHealth -= 50
+					}
+				}
+		}
+	}else{
+		if(image_index >= image_number-1)
+		{
+			// change varAttacking back to false
+			varAttacking = false;
+			isAttackingzRight = false
+			isAttackingLeft = false
+			attackRarity = irandom_range(1,10)
+			if place_meeting(x,y,objKai) {
+				if objGame.canDie {
+					objGame.varHealth -= 25
+				}
+			}
+		}
+	}
+}
 
 if point_distance(x,y,objKai.x,objKai.y) < 700 and not varAttacking{
 	if place_meeting(x + 1, y + 0, objWall) or place_meeting(x-1,y,objWall) or place_meeting(x + 1, y + 0, objSpikeParent) or place_meeting(x-1,y,objSpikeParent)
@@ -290,7 +300,7 @@ if not varAttacking
 				return //no sprite
 			} else {
 				if hasHelemet = true {
-					draw_sprite_ext(sprVGJumpHelmet, image_index, x, y, armorSpriteScale, armorSpriteScale, 0, c_white, 1)
+					draw_sprite_ext(sprEnemyJumpHelmet, image_index, x, y, armorSpriteScale, armorSpriteScale, 0, c_white, 1)
 				} else if hasChestplate = true {
 					return //no sprite
 				} else {
@@ -307,7 +317,7 @@ if not varAttacking
 				return //no sprite
 			} else {
 				if hasHelemet = true {
-					draw_sprite_ext(sprVGzFallHelmet, image_index, x, y, armorSpriteScale, armorSpriteScale, 0, c_white, 1)
+					draw_sprite_ext(sprEnemyFallHelmet, image_index, x, y, armorSpriteScale, armorSpriteScale, 0, c_white, 1)
 				} else if hasChestplate = true {
 					return //no sprite
 				} else {
@@ -347,7 +357,7 @@ if not varAttacking
 					return //no sprite
 				} else {
 					if hasHelemet = true {
-						draw_sprite_ext(sprVGRunHelmet, image_index, x, y, armorSpriteScale, armorSpriteScale, 0, c_white, 1)
+						draw_sprite_ext(sprEnemyRunHelmet, image_index, x, y, armorSpriteScale, armorSpriteScale, 0, c_white, 1)
 					} else if hasChestplate = true {
 						return //no sprite
 					} else {
@@ -392,7 +402,7 @@ if not varAttacking
 					return //no sprite
 				} else {
 					if hasHelemet = true {
-						draw_sprite_ext(sprVGIdleHelmet, image_index, x, y, armorSpriteScale, armorSpriteScale, 0, c_white, 1)
+						draw_sprite_ext(sprEnemyIdleHelmet, image_index, x, y, armorSpriteScale, armorSpriteScale, 0, c_white, 1)
 					} else if hasChestplate = true {
 						return //no sprite
 					} else {

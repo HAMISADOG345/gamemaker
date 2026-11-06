@@ -1,0 +1,1 @@
+despawnCPParticle = 20

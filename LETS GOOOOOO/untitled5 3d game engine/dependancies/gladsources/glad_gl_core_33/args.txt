@@ -1,0 +1,1 @@
+--out-path C:/Users/rowan/CLionProjects/untitled5/cmake-build-debug/gladsources/glad_gl_core_33 --api gl:core=3.3 c 

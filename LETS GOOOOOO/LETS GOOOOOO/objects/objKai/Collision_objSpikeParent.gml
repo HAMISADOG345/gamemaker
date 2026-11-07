@@ -1,2 +1,0 @@
-//spike
-objGame.varDeath = true

@@ -1,0 +1,2 @@
+//spike
+objGame.varDeath = true

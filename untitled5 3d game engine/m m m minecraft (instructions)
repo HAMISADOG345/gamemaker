@@ -1,0 +1,9 @@
+loadModel(<model path>, <model scale float>)
+winBuild(); <--- run base.cpp
+
+imports:
+
+base b;
+b.loadmodel(<para>)
+
+YOU MUST USE OBJ

@@ -25,8 +25,8 @@
   "nineSlice":null,
   "origin":0,
   "parent":{
-    "name":"cavedecor",
-    "path":"folders/Sprites/cavedecor.yy",
+    "name":"CaveDecor",
+    "path":"folders/Sprites/CaveDecor.yy",
   },
   "preMultiplyAlpha":false,
   "resourceType":"GMSprite",

@@ -98,6 +98,7 @@
     {"id":{"name":"rmLevel1","path":"rooms/rmLevel1/rmLevel1.yy",},},
     {"id":{"name":"rmLevel1bluestone","path":"rooms/rmLevel1bluestone/rmLevel1bluestone.yy",},},
     {"id":{"name":"rmLevel2","path":"rooms/rmLevel2/rmLevel2.yy",},},
+    {"id":{"name":"rmTitle","path":"rooms/rmTitle/rmTitle.yy",},},
     {"id":{"name":"BlueInk","path":"sprites/BlueInk/BlueInk.yy",},},
     {"id":{"name":"bluestoneBomb","path":"sprites/bluestoneBomb/bluestoneBomb.yy",},},
     {"id":{"name":"bluestoneEnemyIdle","path":"sprites/bluestoneEnemyIdle/bluestoneEnemyIdle.yy",},},
@@ -147,6 +148,7 @@
     {"id":{"name":"sprSpikes2","path":"sprites/sprSpikes2/sprSpikes2.yy",},},
     {"id":{"name":"sprSpikesCorner","path":"sprites/sprSpikesCorner/sprSpikesCorner.yy",},},
     {"id":{"name":"sprTerrain32by32","path":"sprites/sprTerrain32by32/sprTerrain32by32.yy",},},
+    {"id":{"name":"sprTitleScreen","path":"sprites/sprTitleScreen/sprTitleScreen.yy",},},
     {"id":{"name":"sprVGhitLeft","path":"sprites/sprVGhitLeft/sprVGhitLeft.yy",},},
     {"id":{"name":"sprVGhitLeftHelmet","path":"sprites/sprVGhitLeftHelmet/sprVGhitLeftHelmet.yy",},},
     {"id":{"name":"sprVGhitRight","path":"sprites/sprVGhitRight/sprVGhitRight.yy",},},
@@ -172,6 +174,7 @@
     {"roomId":{"name":"rmLevel1bluestone","path":"rooms/rmLevel1bluestone/rmLevel1bluestone.yy",},},
     {"roomId":{"name":"rmLevel1","path":"rooms/rmLevel1/rmLevel1.yy",},},
     {"roomId":{"name":"rmLevel2","path":"rooms/rmLevel2/rmLevel2.yy",},},
+    {"roomId":{"name":"rmTitle","path":"rooms/rmTitle/rmTitle.yy",},},
   ],
   "templateType":"game",
   "TextureGroups":[

@@ -40,7 +40,7 @@ if varHasJetPack = false
 	// if space bar pressed, then jump
 	// if you want to use the up arrow instead of vk_space use vk_up or use both like this
 	// if keyboard_check_pressed(vk_space) or keyboard_check_pressed(vk_up)
-	if keyboard_check_pressed(vk_up) or keyboard_check_pressed(vk_space) or keyboard_check(ord("W"))
+	if keyboard_check_pressed(vk_up) or keyboard_check_pressed(vk_space)
 	{
 		// This block prevents jumping higher and higher
 		// So it checks that the player is in contact with a block below before

@@ -6,8 +6,8 @@
   "name":"objJumpObject",
   "overriddenProperties":[],
   "parent":{
-    "name":"Other",
-    "path":"folders/Objects/Other.yy",
+    "name":"Enemies and Hazards",
+    "path":"folders/Objects/Enemies and Hazards.yy",
   },
   "parentObjectId":null,
   "persistent":false,

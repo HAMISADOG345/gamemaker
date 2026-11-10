@@ -87,6 +87,15 @@ if point_distance(x,y,objKai.x,objKai.y) < 500 and not varAttacking{
 
 if not varAttacking
 {
+		if (place_meeting(x + 1, y, objEnemyWall) && objKai.x > x) {
+	    varHSpeed = 0;
+	    sprite_index = varSPRIdle;
+	}
+	
+	if (place_meeting(x - 1, y, objEnemyWall) && objKai.x < x) {
+	    varHSpeed = 0;
+	    sprite_index = varSPRIdle;
+	}
 	// set the mask_index to the idle sprite
 	// it is managed inside the NotAttacking so that the attack mask can be changed
 	mask_index = varSPRIdle

@@ -454,4 +454,8 @@ if objKai.debug {
 
 move_wrap(true, true,0)
 
+if varHealth <= 0 {
+	instance_destroy(self)
+}
+
 

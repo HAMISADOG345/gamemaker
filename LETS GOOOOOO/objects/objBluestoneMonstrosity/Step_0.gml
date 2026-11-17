@@ -49,64 +49,75 @@ if (varAttacking) {
     if (attackRarity == 1) {
         sprite_index = varSPRSummon;
         if (image_index >= image_number - 1) {
-            varAttacking = false
-            isAttackingzRight = false
-            isAttackingLeft = false
-            attackRarity = irandom_range(1, 10)
             if (place_meeting(x, y, objKai) && objGame.canDie) {
-                objGame.varHealth -= 100
+                objGame.varHealth -= 100;
             }
+            varAttacking = false;
+            isAttackingRight = false;
+            isAttackingLeft = false;
+            varAttackDuration = 30;
+            attackRarity = irandom_range(1, 10);
         }
     } 
     else if (attackRarity == 2 || attackRarity == 3 || attackRarity == 4) {
         sprite_index = varSPRstomp;
         if (image_index >= image_number - 1) {
-            varAttacking = false
-            isAttackingzRight = false
-            isAttackingLeft = false
-            attackRarity = irandom_range(1, 10)
             if (place_meeting(x, y, objKai) && objGame.canDie) {
-                objGame.varHealth -= 50
+                objGame.varHealth -= 50;
+            }
+            varAttacking = false;
+            isAttackingRight = false;
+            isAttackingLeft = false;
+            varAttackDuration = 30;
+            attackRarity = irandom_range(1, 10);
+        }
+    }
+    else if (attackRarity == 5 || attackRarity == 6) {
+        if (varAttackDuration == 30) {
+            if (objKai.x < x) {
+                varHSpeed = -10;
+                sprite_index = sprblustoneChargeRight;
+            } else {
+                varHSpeed = 10;
+                sprite_index = sprblustoneChargeRight;
             }
         }
-    }
-	else if (attackRarity == 5) {
-		var varAttackDuration = 100
-		if objKai.x > x {
-			for (var i = 0; i < 20; i++) {
-			varHSpeed = 20
-			sprite_index = sprblustoneIdleCharge;
-		        if (varAttackDuration >= varAttackDuration - 1) {
-					varAttackDuration--
-		            varAttacking = false
-		            isAttackingzRight = false
-		            isAttackingLeft = false
-		            attackRarity = irandom_range(1, 10)
-		            if (place_meeting(x, y, objKai) && objGame.canDie) {
-		                objGame.varHealth -= 50
-		            }
-		        }
-			}
-		}
-    }
-    else {
-        if (image_index >= image_number - 1) {
-            varAttacking = false
-            isAttackingzRight = false
-            isAttackingLeft = false
-            attackRarity = irandom_range(1, 10)
+
+        if (varAttackDuration > 0) {
+            varAttackDuration--;
+            x += varHSpeed;
+
+            if (place_meeting(x, y, objKai) && objGame.canDie) {
+                objGame.varHealth -= 50;
+            }
+        } else {
+            varHSpeed = 0;
+            varAttacking = false;
+            isAttackingRight = false;
+            isAttackingLeft = false;
+            varAttackDuration = 30;
+            attackRarity = irandom_range(1, 10);
         }
+    }
+
+    else {
+        varAttacking = false;
+        isAttackingRight = false;
+        isAttackingLeft = false;
+        varAttackDuration = 30;
+        attackRarity = irandom_range(1, 10);
     }
 }
 
 
 
 if point_distance(x,y,objKai.x,objKai.y) < 700 and not varAttacking{
+	oattackRarity = irandom_range(1,10)
 	if place_meeting(x + 1, y + 0, objWall) or place_meeting(x-1,y,objWall) or place_meeting(x + 1, y + 0, objSpikeParent) or place_meeting(x-1,y,objSpikeParent)
 	{
 		varVSpeed = -varJumpingSpeed
 		varJumping = true
-		varJumps++  // should now be 1
+		varJumps++ 
 	}
 	
 	if place_meeting(x,y,objKai) and objKai.x = x {
@@ -131,6 +142,7 @@ if point_distance(x,y,objKai.x,objKai.y) < 700 and not varAttacking{
 			varRunning = true
 		}
 	}
+
 }
 
 if not varAttacking

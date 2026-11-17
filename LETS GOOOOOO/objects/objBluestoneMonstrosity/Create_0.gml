@@ -8,7 +8,7 @@
 // The following set of varibles can be changed here by the developer or in other
 // locations of the game to impact player behavior
 varWalkingSpeed = 5	// sets the walking speed
-varRunningSpeed = 10		// sets the running speed
+varRunningSpeed = 8		// sets the running speed
 varJumpingSpeed = 5    	// sets the jumping speed
 varGravity = 0.4			// sets the gravity
 varDrag = 0.3				// sets the drag - how fast a character slows
@@ -32,6 +32,8 @@ varHSpeed = 0
 varJumps = 0
 vely = 0
 
+varAttackDuration = 100
+
 image_xscale = -7
 image_yscale = 7
 
@@ -50,6 +52,7 @@ armorSpriteScale = image_xscale
 tutorial = false
 
 attackRarity = 8
+oattackRarity = 8
 
 
 

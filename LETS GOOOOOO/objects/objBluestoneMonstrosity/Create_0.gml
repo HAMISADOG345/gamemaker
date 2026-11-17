@@ -51,10 +51,6 @@ tutorial = false
 
 attackRarity = 8
 
-instance_create_layer(x,y,"entityGlow",objBluestoneMonGlow)
-
-
-
 
 
 

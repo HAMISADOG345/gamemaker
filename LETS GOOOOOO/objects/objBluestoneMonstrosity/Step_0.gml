@@ -58,7 +58,7 @@ if (varAttacking) {
             }
         }
     } 
-    else if (attackRarity == 2 || attackRarity == 3) {
+    else if (attackRarity == 2 || attackRarity == 3 || attackRarity == 4) {
         sprite_index = varSPRstomp;
         if (image_index >= image_number - 1) {
             varAttacking = false
@@ -69,6 +69,25 @@ if (varAttacking) {
                 objGame.varHealth -= 50
             }
         }
+    }
+	else if (attackRarity == 5) {
+		var varAttackDuration = 100
+		if objKai.x > x {
+			for (var i = 0; i < 20; i++) {
+			varHSpeed = 20
+			sprite_index = sprblustoneIdleCharge;
+		        if (varAttackDuration >= varAttackDuration - 1) {
+					varAttackDuration--
+		            varAttacking = false
+		            isAttackingzRight = false
+		            isAttackingLeft = false
+		            attackRarity = irandom_range(1, 10)
+		            if (place_meeting(x, y, objKai) && objGame.canDie) {
+		                objGame.varHealth -= 50
+		            }
+		        }
+			}
+		}
     }
     else {
         if (image_index >= image_number - 1) {

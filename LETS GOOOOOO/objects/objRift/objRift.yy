@@ -9,8 +9,8 @@
   "name":"objRift",
   "overriddenProperties":[],
   "parent":{
-    "name":"LETS GOOOOOO",
-    "path":"LETS GOOOOOO.yyp",
+    "name":"Enemies and Hazards",
+    "path":"folders/Objects/Enemies and Hazards.yy",
   },
   "parentObjectId":null,
   "persistent":false,

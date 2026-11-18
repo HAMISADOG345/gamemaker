@@ -2035,6 +2035,7 @@
     {"name":"inst_28336996","path":"rooms/rmLevel1bluestone/rmLevel1bluestone.yy",},
     {"name":"inst_4D7AC738","path":"rooms/rmLevel1bluestone/rmLevel1bluestone.yy",},
     {"name":"inst_76BD632F","path":"rooms/rmLevel1bluestone/rmLevel1bluestone.yy",},
+    {"name":"inst_38578D5","path":"rooms/rmLevel1bluestone/rmLevel1bluestone.yy",},
   ],
   "isDnd":false,
   "layers":[
@@ -2050,6 +2051,7 @@
         {"$GMRInstance":"v4","%Name":"inst_54A520E0","colour":4294967295,"frozen":false,"hasCreationCode":false,"ignore":false,"imageIndex":0,"imageSpeed":1.0,"inheritCode":false,"inheritedItemId":null,"inheritItemSettings":false,"isDnd":false,"name":"inst_54A520E0","objectId":{"name":"objSmartEnemyHelmet","path":"objects/objSmartEnemyHelmet/objSmartEnemyHelmet.yy",},"properties":[],"resourceType":"GMRInstance","resourceVersion":"2.0","rotation":0.0,"scaleX":1.0,"scaleY":1.0,"x":1888.0,"y":2368.0,},
         {"$GMRInstance":"v4","%Name":"inst_307AFEB1","colour":4294967295,"frozen":false,"hasCreationCode":false,"ignore":false,"imageIndex":0,"imageSpeed":1.0,"inheritCode":false,"inheritedItemId":null,"inheritItemSettings":false,"isDnd":false,"name":"inst_307AFEB1","objectId":{"name":"objSmartEnemyHelmet","path":"objects/objSmartEnemyHelmet/objSmartEnemyHelmet.yy",},"properties":[],"resourceType":"GMRInstance","resourceVersion":"2.0","rotation":0.0,"scaleX":1.0,"scaleY":1.0,"x":1984.0,"y":2368.0,},
         {"$GMRInstance":"v4","%Name":"inst_71120857","colour":4294967295,"frozen":false,"hasCreationCode":false,"ignore":false,"imageIndex":0,"imageSpeed":1.0,"inheritCode":false,"inheritedItemId":null,"inheritItemSettings":false,"isDnd":false,"name":"inst_71120857","objectId":{"name":"objGame","path":"objects/objGame/objGame.yy",},"properties":[],"resourceType":"GMRInstance","resourceVersion":"2.0","rotation":0.0,"scaleX":7.0,"scaleY":7.0,"x":-128.0,"y":1632.0,},
+        {"$GMRInstance":"v4","%Name":"inst_38578D5","colour":4294967295,"frozen":false,"hasCreationCode":false,"ignore":false,"imageIndex":0,"imageSpeed":1.0,"inheritCode":false,"inheritedItemId":null,"inheritItemSettings":false,"isDnd":false,"name":"inst_38578D5","objectId":{"name":"objBluestonePlatform","path":"objects/objBluestonePlatform/objBluestonePlatform.yy",},"properties":[],"resourceType":"GMRInstance","resourceVersion":"2.0","rotation":0.0,"scaleX":1.0,"scaleY":1.0,"x":544.0,"y":1888.0,},
       ],"layers":[],"name":"riftLayer","properties":[],"resourceType":"GMRInstanceLayer","resourceVersion":"2.0","userdefinedDepth":false,"visible":true,},
     {"$GMRAssetLayer":"","%Name":"decor2","assets":[
         {"$GMRSpriteGraphic":"v1","%Name":"graphic_D544564","animationSpeed":1.0,"colour":4294967295,"frozen":false,"headPosition":0.0,"ignore":false,"inheritedItemId":null,"inheritItemSettings":false,"name":"graphic_D544564","resourceType":"GMRSpriteGraphic","resourceVersion":"2.0","rotation":0.0,"scaleX":1.0,"scaleY":1.0,"spriteId":{"name":"stalagmites","path":"sprites/stalagmites/stalagmites.yy",},"x":242.0,"y":1768.0,},

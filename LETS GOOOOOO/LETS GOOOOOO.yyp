@@ -75,6 +75,7 @@
     {"id":{"name":"objGate","path":"objects/objGate/objGate.yy",},},
     {"id":{"name":"objHeart","path":"objects/objHeart/objHeart.yy",},},
     {"id":{"name":"objHitParticle","path":"objects/objHitParticle/objHitParticle.yy",},},
+    {"id":{"name":"objHitParticleParticle","path":"objects/objHitParticleParticle/objHitParticleParticle.yy",},},
     {"id":{"name":"objJumpObject","path":"objects/objJumpObject/objJumpObject.yy",},},
     {"id":{"name":"objKai","path":"objects/objKai/objKai.yy",},},
     {"id":{"name":"objPlatform","path":"objects/objPlatform/objPlatform.yy",},},

@@ -360,7 +360,13 @@ if objKai.debug {
 	}
 }
 
-
+if varHealth <= 0 {
+	var varRandom = irandom_range(1,20)
+	if varRandom == 1 {
+		instance_create_layer(x,y,"riftLayer",objHeart)
+	}
+	instance_destroy(self)
+}
 
 
 

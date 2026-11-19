@@ -50,7 +50,7 @@ if (varAttacking) {
         sprite_index = varSPRSummon;
         if (image_index >= image_number - 1) {
             if (place_meeting(x, y, objKai) && objGame.canDie) {
-                objGame.varHealth -= 100;
+                objGame.varHealth -= 25;
             }
             varAttacking = false;
             isAttackingRight = false;
@@ -63,7 +63,7 @@ if (varAttacking) {
         sprite_index = varSPRstomp;
         if (image_index >= image_number - 1) {
             if (place_meeting(x, y, objKai) && objGame.canDie) {
-                objGame.varHealth -= 50;
+                objGame.varHealth -= 10;
             }
             varAttacking = false;
             isAttackingRight = false;
@@ -88,7 +88,7 @@ if (varAttacking) {
             x += varHSpeed;
 
             if (place_meeting(x, y, objKai) && objGame.canDie) {
-                objGame.varHealth -= 50;
+                objGame.varHealth -= 1;
             }
         } else {
             varHSpeed = 0;

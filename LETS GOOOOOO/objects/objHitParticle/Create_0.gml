@@ -1,1 +1,1 @@
-despawnCPParticle = 50
+despawnCPParticle = 15

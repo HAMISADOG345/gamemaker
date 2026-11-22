@@ -6,6 +6,9 @@ ________________________________________________________________________________
 LOOK AT THE MONSTEROUS AMOUNT OF LANGUAGES THERE ARE IN THIS PROJECT. IDK HOW glad HAS SO MUCH C IN IT
 _______________________________________________________________________________________________________________________-
 
+bluestone is now a tf2 player and the player is the flash... er...
+_____________________________________________________________________________________________________________________
+
 untitled5 3d engine: a 3d engine built for OBJ that is so simple it can only display a static 3d model
 
 here is some game code:

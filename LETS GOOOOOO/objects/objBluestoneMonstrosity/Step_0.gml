@@ -75,17 +75,39 @@ if (varAttacking) {
     else if (attackRarity == 5 || attackRarity == 6) {
         if (varAttackDuration == 30) {
             if (objKai.x < x) {
-                varHSpeed = -10;
-                sprite_index = sprblustoneChargeRight;
+                varHSpeed = -10
+                sprite_index = sprblustoneChargeRight
             } else {
-                varHSpeed = 10;
-                sprite_index = sprblustoneChargeRight;
+                varHSpeed = 10
+                sprite_index = sprblustoneChargeRight
             }
         }
 
         if (varAttackDuration > 0) {
-            varAttackDuration--;
-            x += varHSpeed;
+            varAttackDuration--
+            if place_meeting(x + varHSpeed, y, objWall)
+				{
+					var varCollide = false;
+			
+					while not varCollide
+					{
+						// SIGN returns 1 when the number is positive
+						// SIGN returns -1 when the number is negative
+						// This allows use to take steps of 1 to get right
+						// up to the wall one pixel at a time
+						if not place_meeting(x + sign(varHSpeed), y, objWall)
+						{
+							x += sign(varHSpeed)
+						}
+						else
+						{
+							varCollide = true
+							varHSpeed = 0
+						}
+					}
+				} else {
+					x += varHSpeed
+				}
 
             if (place_meeting(x, y, objKai) && objGame.canDie) {
                 objGame.varHealth -= 1;
@@ -160,7 +182,29 @@ if point_distance(x,y,objKai.x,objKai.y) < 800 && point_distance(x,y,objKai.x,ob
 
         if (varAttackDuration > 0) {
             varAttackDuration--;
-            x += varHSpeed;
+                        if place_meeting(x + varHSpeed, y, objWall)
+				{
+					var varCollide = false;
+			
+					while not varCollide
+					{
+						// SIGN returns 1 when the number is positive
+						// SIGN returns -1 when the number is negative
+						// This allows use to take steps of 1 to get right
+						// up to the wall one pixel at a time
+						if not place_meeting(x + sign(varHSpeed), y, objWall)
+						{
+							x += sign(varHSpeed)
+						}
+						else
+						{
+							varCollide = true
+							varHSpeed = 0
+						}
+					}
+				} else {
+					x += varHSpeed
+				}
 
             if (place_meeting(x, y, objKai) && objGame.canDie) {
                 objGame.varHealth -= 1;

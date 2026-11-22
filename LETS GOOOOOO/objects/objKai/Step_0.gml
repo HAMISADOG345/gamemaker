@@ -62,7 +62,7 @@ if varHasJetPack = false
 	
 	// if right arrow key down, then set HSpeed to the default Walking Speed
 	// if shift pressed as well, then setup for Running Speed
-	if keyboard_check(vk_right) or keyboard_check(ord("D"))
+	if keyboard_check(vk_right)
 	{
 
 		varHSpeed = varWalkingSpeed
@@ -88,11 +88,40 @@ if varHasJetPack = false
 			if place_meeting(x+1,y+1,objSlope){
 				y-=varHSpeed/2
 			}
-
+		
+		if keyboard_check(ord("D")) {
+			for (var i = 0; i < varDash; i++) {
+				instance_create_layer(x,y,"riftLayer",objKaiAfterImage)
+				varHSpeed = varDashSpeed
+				if place_meeting(x + varHSpeed, y, objWall)
+				{
+					var varCollide = false;
+			
+					while not varCollide
+					{
+						// SIGN returns 1 when the number is positive
+						// SIGN returns -1 when the number is negative
+						// This allows use to take steps of 1 to get right
+						// up to the wall one pixel at a time
+						if not place_meeting(x + sign(varHSpeed), y, objWall)
+						{
+							x += sign(varHSpeed)
+						}
+						else
+						{
+							varCollide = true
+							varHSpeed = 0
+						}
+					}
+				} else {
+					x += varHSpeed
+				}
+			}
+		}
 	}
 
 	// if left arrow key down, then set HSpeed to the negative value of Walking Speed
-	if keyboard_check(vk_left) or keyboard_check(ord("A"))
+	if keyboard_check(vk_left)
 	{
 		// Reverse by making it negative
 		varHSpeed = -varWalkingSpeed
@@ -106,6 +135,35 @@ if varHasJetPack = false
 			y+=varHSpeed/2
 		}
 		varDirection = true
+				if keyboard_check(ord("D")) {
+			for (var i = 0; i < varDash; i++) {
+								instance_create_layer(x,y,"riftLayer",objKaiAfterImage)
+				varHSpeed = -varDashSpeed
+				if place_meeting(x + varHSpeed, y, objWall)
+				{
+					var varCollide = false;
+			
+					while not varCollide
+					{
+						// SIGN returns 1 when the number is positive
+						// SIGN returns -1 when the number is negative
+						// This allows use to take steps of 1 to get right
+						// up to the wall one pixel at a time
+						if not place_meeting(x + sign(varHSpeed), y, objWall)
+						{
+							x += sign(varHSpeed)
+						}
+						else
+						{
+							varCollide = true
+							varHSpeed = 0
+						}
+					}
+				} else {
+					x += varHSpeed
+				}
+			}
+		}
 	}
 
 	// Now that the vertical and horizontal speeds have been set above, adjust for gravity

@@ -41,6 +41,8 @@ varHasJetPack = false
 
 prevHealth = objGame.varHealth
 
+varDash = 10;
+
 
 
 

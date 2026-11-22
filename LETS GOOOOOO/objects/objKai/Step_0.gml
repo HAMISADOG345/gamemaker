@@ -91,7 +91,6 @@ if varHasJetPack = false
 		
 		if keyboard_check(ord("D")) {
 			for (var i = 0; i < varDash; i++) {
-				instance_create_layer(x,y,"riftLayer",objKaiAfterImage)
 				varHSpeed = varDashSpeed
 				if place_meeting(x + varHSpeed, y, objWall)
 				{
@@ -115,6 +114,7 @@ if varHasJetPack = false
 					}
 				} else {
 					x += varHSpeed
+					instance_create_layer(x,y,"riftLayer",objKaiAfterImage)
 				}
 			}
 		}
@@ -137,7 +137,6 @@ if varHasJetPack = false
 		varDirection = true
 				if keyboard_check(ord("D")) {
 			for (var i = 0; i < varDash; i++) {
-								instance_create_layer(x,y,"riftLayer",objKaiAfterImage)
 				varHSpeed = -varDashSpeed
 				if place_meeting(x + varHSpeed, y, objWall)
 				{
@@ -161,6 +160,7 @@ if varHasJetPack = false
 					}
 				} else {
 					x += varHSpeed
+					instance_create_layer(x,y,"riftLayer",objKaiAfterImage)
 				}
 			}
 		}

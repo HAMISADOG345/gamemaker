@@ -310,7 +310,7 @@ else // This is animation end logic for any attack sprite
 }
 
 if varHealth <= 0 {
-	var varRandom = irandom_range(1,20)
+	var varRandom = irandom_range(1,5)
 	if varRandom == 1 {
 		instance_create_layer(x,y,"riftLayer",objHeart)
 	}

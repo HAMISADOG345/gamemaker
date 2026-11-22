@@ -26,3 +26,9 @@ if varHealth <= 0 and canDie {
 if canDie = false {
 	varHealth+=1000
 }
+if room = rmLevel1bluestone {
+	lvl1keys = true
+} else {
+	lvl1keys = false
+	varKeys = 0
+}

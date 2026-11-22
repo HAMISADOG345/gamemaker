@@ -1,0 +1,1 @@
+objGame.varKeys = 0

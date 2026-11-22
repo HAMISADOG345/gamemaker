@@ -1,10 +1,12 @@
+image_xscale = 2
+image_yscale = 2
 if objKai.varDirection = true
 {
-	image_angle = 180
+		image_xscale = -image_xscale
 	x -= 60
 	
 }
 if objKai.varDirection = false
 {
-	image_angle = 0
+	x+=60
 }

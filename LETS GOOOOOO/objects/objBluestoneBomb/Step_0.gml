@@ -1,0 +1,2 @@
+vely += gravity
+y += vely

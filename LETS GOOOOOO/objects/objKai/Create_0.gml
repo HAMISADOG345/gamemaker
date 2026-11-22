@@ -13,7 +13,7 @@ varJumpingSpeed = 12     	// sets the jumping speed
 varGravity = 0.4			// sets the gravity
 varDrag = 0.3				// sets the drag - how fast a character slows
 varRunningJumps = true		// set to false if you dont want runnning speed to be used in jumps
-varDoubleJumps = false		// set to false if you dont want double jump
+varDoubleJumps = true		// set to false if you dont want double jump
 varAttacking = false		// used for attacking
 varLook = 0	
 varLslidecool = 20
@@ -38,6 +38,8 @@ image_xscale = 2
 image_yscale = 2
 
 varHasJetPack = false
+
+prevHealth = objGame.varHealth
 
 
 

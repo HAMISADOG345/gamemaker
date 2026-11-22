@@ -9,7 +9,6 @@ var camW = camera_get_view_width(cam);
 var camH = camera_get_view_height(cam);
 draw_set_halign(fa_center);
 draw_set_valign(fa_middle);
-//stats in here
 draw_set_color(c_green)
 
 draw_self()

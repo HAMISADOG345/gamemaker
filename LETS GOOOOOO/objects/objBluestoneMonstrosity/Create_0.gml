@@ -33,6 +33,7 @@ varJumps = 0
 vely = 0
 
 varAttackDuration = 100
+varRandomATKRange = 4
 
 image_xscale = -7
 image_yscale = 7

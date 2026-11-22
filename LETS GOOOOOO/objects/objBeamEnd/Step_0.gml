@@ -1,0 +1,1 @@
+move_towards_point(objKai.x, objKai.y, 5)

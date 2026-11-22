@@ -59,7 +59,7 @@ if (varAttacking) {
             attackRarity = irandom_range(1, 10);
         }
     } 
-    else if (attackRarity == 2 || attackRarity == 3 || attackRarity == 4) {
+    else if (attackRarity == 2 || attackRarity == 3) {
         sprite_index = varSPRstomp;
         if (image_index >= image_number - 1) {
             if (place_meeting(x, y, objKai) && objGame.canDie) {
@@ -143,6 +143,59 @@ if point_distance(x,y,objKai.x,objKai.y) < 700 and not varAttacking{
 		}
 	}
 
+}
+
+if point_distance(x,y,objKai.x,objKai.y) < 800 && point_distance(x,y,objKai.x,objKai.y) > 100{
+	if varRandomATKRange == 4 or varRandomATKRange == 5 {
+		varAttacking = true
+		if (varAttackDuration == 30) {
+            if (objKai.x < x) {
+                varHSpeed = -10;
+                sprite_index = sprblustoneChargeRight;
+            } else {
+                varHSpeed = 10;
+                sprite_index = sprblustoneChargeRight;
+            }
+        }
+
+        if (varAttackDuration > 0) {
+            varAttackDuration--;
+            x += varHSpeed;
+
+            if (place_meeting(x, y, objKai) && objGame.canDie) {
+                objGame.varHealth -= 1;
+            }
+        } else {
+            varHSpeed = 0;
+            varAttacking = false;
+            isAttackingRight = false;
+            isAttackingLeft = false;
+            varAttackDuration = 30;
+            varRandomATKRange = irandom_range(1, 10);
+        }
+	} else if varRandomATKRange == 2 {
+		varAttacking = true
+		instance_create_layer(x,y,"riftLayer",objRift)
+		varRandomATKRange = irandom_range(1, 10);
+		varAttacking = false
+	} else if varRandomATKRange == 3 {
+		varAttacking = true
+		repeat(20) {
+			var varBombSpray = instance_create_layer(x,y,"riftLayer",objBluestoneBomb) 
+			varBombSpray.speed = irandom_range(10,30)
+			varBombSpray.direction = direction + 90 - irandom_range(0,100)
+		
+			if varHSpeed >= 0 {
+				varBombSpray.direction = direction + 90 + irandom_range(-20,-100)
+			} else if varHSpeed <= 0{
+				varBombSpray.direction = direction + 90 - irandom_range(-20,-100)
+			}
+		}
+		varRandomATKRange = irandom_range(1, 10);
+		varAttacking = false
+	} else {
+		varRandomATKRange = irandom_range(1,20)
+	}
 }
 
 if not varAttacking

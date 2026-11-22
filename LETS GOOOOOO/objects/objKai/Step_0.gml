@@ -56,6 +56,7 @@ if varHasJetPack = false
 			varVSpeed = -varJumpingSpeed
 			varJumping = true
 			varJumps++ //show now be 2
+			sprite_index = sprKaiDoubleJump
 		}
 	}
 	
@@ -227,7 +228,11 @@ if varHasJetPack = false
 	{
 		if varVSpeed < 0 
 		{
-			sprite_index = varSPRJumpUp
+			if varJumps == 1 {
+				sprite_index = varSPRJumpUp
+			} else if varJumps == 2 {
+				sprite_index = sprKaiDoubleJump
+			}
 		}
 		else
 		{

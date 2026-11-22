@@ -25,8 +25,8 @@ if varLook = 0
 	varSPRRunning = sprVGRunHelmet
 	varSPRJumpUp = sprblustoneWalk
 	varSPRJumpDown = sprblustoneWalk
-	varSPRHitLeft = sprVGhitLeftHelmet
-	varSPRHitRight = sprVGhitRightHelmet
+	varSPRHitLeft = sprblustoneSmack
+	varSPRHitRight = sprblustoneSmackRight
 	varSPRSummon = sprblustoneSummon
 	varSPRstomp = sprbluestoneStomp
 } 

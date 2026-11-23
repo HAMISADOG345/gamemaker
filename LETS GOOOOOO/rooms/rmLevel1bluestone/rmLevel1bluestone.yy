@@ -2311,6 +2311,7 @@
     {"name":"inst_30093180","path":"rooms/rmLevel1bluestone/rmLevel1bluestone.yy",},
     {"name":"inst_63246029","path":"rooms/rmLevel1bluestone/rmLevel1bluestone.yy",},
     {"name":"inst_38AC3872","path":"rooms/rmLevel1bluestone/rmLevel1bluestone.yy",},
+    {"name":"inst_606CED73","path":"rooms/rmLevel1bluestone/rmLevel1bluestone.yy",},
   ],
   "isDnd":false,
   "layers":[
@@ -2331,6 +2332,7 @@
         {"$GMRInstance":"v4","%Name":"inst_501A098F","colour":4294967295,"frozen":false,"hasCreationCode":false,"ignore":false,"imageIndex":0,"imageSpeed":1.0,"inheritCode":false,"inheritedItemId":null,"inheritItemSettings":false,"isDnd":false,"name":"inst_501A098F","objectId":{"name":"objKey","path":"objects/objKey/objKey.yy",},"properties":[],"resourceType":"GMRInstance","resourceVersion":"2.0","rotation":0.0,"scaleX":1.0,"scaleY":1.0,"x":250.0,"y":1361.0,},
         {"$GMRInstance":"v4","%Name":"inst_19BDB385","colour":4294967295,"frozen":false,"hasCreationCode":false,"ignore":false,"imageIndex":0,"imageSpeed":1.0,"inheritCode":false,"inheritedItemId":null,"inheritItemSettings":false,"isDnd":false,"name":"inst_19BDB385","objectId":{"name":"objKey","path":"objects/objKey/objKey.yy",},"properties":[],"resourceType":"GMRInstance","resourceVersion":"2.0","rotation":0.0,"scaleX":1.0,"scaleY":1.0,"x":4754.0,"y":1880.0,},
         {"$GMRInstance":"v4","%Name":"inst_38AC3872","colour":4294967295,"frozen":false,"hasCreationCode":false,"ignore":false,"imageIndex":0,"imageSpeed":1.0,"inheritCode":false,"inheritedItemId":null,"inheritItemSettings":false,"isDnd":false,"name":"inst_38AC3872","objectId":{"name":"doorCloseObject","path":"objects/doorCloseObject/doorCloseObject.yy",},"properties":[],"resourceType":"GMRInstance","resourceVersion":"2.0","rotation":0.0,"scaleX":1.0,"scaleY":5.5,"x":6112.0,"y":1568.0,},
+        {"$GMRInstance":"v4","%Name":"inst_606CED73","colour":4294967295,"frozen":false,"hasCreationCode":false,"ignore":false,"imageIndex":0,"imageSpeed":1.0,"inheritCode":false,"inheritedItemId":null,"inheritItemSettings":false,"isDnd":false,"name":"inst_606CED73","objectId":{"name":"objBossSpawner","path":"objects/objBossSpawner/objBossSpawner.yy",},"properties":[],"resourceType":"GMRInstance","resourceVersion":"2.0","rotation":0.0,"scaleX":1.0,"scaleY":1.0,"x":7616.0,"y":1728.0,},
       ],"layers":[],"name":"riftLayer","properties":[],"resourceType":"GMRInstanceLayer","resourceVersion":"2.0","userdefinedDepth":false,"visible":true,},
     {"$GMRAssetLayer":"","%Name":"decor2","assets":[
         {"$GMRSpriteGraphic":"v1","%Name":"graphic_D544564","animationSpeed":1.0,"colour":4294967295,"frozen":false,"headPosition":0.0,"ignore":false,"inheritedItemId":null,"inheritItemSettings":false,"name":"graphic_D544564","resourceType":"GMRSpriteGraphic","resourceVersion":"2.0","rotation":0.0,"scaleX":1.0,"scaleY":1.0,"spriteId":{"name":"stalagmites","path":"sprites/stalagmites/stalagmites.yy",},"x":242.0,"y":1768.0,},

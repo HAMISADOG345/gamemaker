@@ -12,7 +12,10 @@
     "name":"Enemies and Hazards",
     "path":"folders/Objects/Enemies and Hazards.yy",
   },
-  "parentObjectId":null,
+  "parentObjectId":{
+    "name":"objRiftParent",
+    "path":"objects/objRiftParent/objRiftParent.yy",
+  },
   "persistent":false,
   "physicsAngularDamping":0.1,
   "physicsDensity":0.5,

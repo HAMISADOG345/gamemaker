@@ -32,3 +32,20 @@ if room = rmLevel1bluestone {
 	lvl1keys = false
 	varKeys = 0
 }
+if bossTrigger and varDeath = true{
+	if instance_exists(objRiftParent) {
+		instance_destroy(objRiftParent)
+	}
+	if instance_exists(objEnemyParent) {
+		instance_destroy(objEnemyParent)
+	}
+	varKeys = 3
+	varSpawnBoss = true
+}
+if varSpawnBoss {
+	varSpawnBoss = false
+	if room = rmLevel1bluestone {
+		instance_create_layer(objBossSpawner.x,objBossSpawner.y,"riftLayer",objBluestoneMonstrosity)
+	}
+}
+

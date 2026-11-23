@@ -133,7 +133,7 @@ if (varAttacking) {
 
 
 
-if point_distance(x,y,objKai.x,objKai.y) < 700 and not varAttacking{
+if point_distance(x,y,objKai.x,objKai.y) < 1000 and not varAttacking{
 	oattackRarity = irandom_range(1,10)
 	if place_meeting(x + 1, y + 0, objWall) or place_meeting(x-1,y,objWall) or place_meeting(x + 1, y + 0, objSpikeParent) or place_meeting(x-1,y,objSpikeParent)
 	{
@@ -167,7 +167,7 @@ if point_distance(x,y,objKai.x,objKai.y) < 700 and not varAttacking{
 
 }
 
-if point_distance(x,y,objKai.x,objKai.y) < 800 && point_distance(x,y,objKai.x,objKai.y) > 100{
+if point_distance(x,y,objKai.x,objKai.y) < 900 && point_distance(x,y,objKai.x,objKai.y) > 100{
 	if varRandomATKRange == 4 or varRandomATKRange == 5 {
 		varAttacking = true
 		if (varAttackDuration == 30) {
@@ -217,12 +217,12 @@ if point_distance(x,y,objKai.x,objKai.y) < 800 && point_distance(x,y,objKai.x,ob
             varAttackDuration = 30;
             varRandomATKRange = irandom_range(1, 10);
         }
-	} else if varRandomATKRange == 2 {
+	} else if varRandomATKRange == 7 or varRandomATKRange == 3 or varRandomATKRange == 6{
 		varAttacking = true
 		instance_create_layer(x,y,"riftLayer",objRift)
 		varRandomATKRange = irandom_range(1, 10);
 		varAttacking = false
-	} else if varRandomATKRange == 3 {
+	} else if varRandomATKRange == 2 {
 		varAttacking = true
 		repeat(20) {
 			var varBombSpray = instance_create_layer(x,y,"riftLayer",objBluestoneBomb) 
@@ -552,6 +552,14 @@ if objKai.debug {
 move_wrap(true, true,0)
 
 if varHealth <= 0 {
+			repeat(20) {
+			var varBombSpray = instance_create_layer(x,y,"riftLayer",objHeart) 
+			varBombSpray.speed = irandom_range(10,30)
+			varBombSpray.direction = direction + 90 - irandom_range(0,100)
+		
+				varBombSpray.direction = direction + 90 + irandom_range(-20,-100)
+				varBombSpray.direction = direction + 90 - irandom_range(-20,-100)
+		}
 	instance_destroy(self)
 }
 

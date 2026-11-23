@@ -39,8 +39,6 @@ image_yscale = 2
 
 varHasJetPack = false
 
-prevHealth = objGame.varHealth
-
 varDash = 10;
 
 

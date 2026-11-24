@@ -50,26 +50,26 @@ if (varAttacking) {
         sprite_index = varSPRSummon;
         if (image_index >= image_number - 1) {
             if (place_meeting(x, y, objKai) && objGame.canDie) {
-                objGame.varHealth -= 25;
-            }
-            varAttacking = false;
-            isAttackingRight = false;
-            isAttackingLeft = false;
-            varAttackDuration = 30;
-            attackRarity = irandom_range(1, 10);
-        }
-    } 
-    else if (attackRarity == 2 || attackRarity == 3) {
-        sprite_index = varSPRstomp;
-        if (image_index >= image_number - 1) {
-            if (place_meeting(x, y, objKai) && objGame.canDie) {
                 objGame.varHealth -= 10;
             }
             varAttacking = false;
             isAttackingRight = false;
             isAttackingLeft = false;
             varAttackDuration = 30;
-            attackRarity = irandom_range(1, 10);
+            attackRarity = irandom_range(1, 30);
+        }
+    } 
+    else if (attackRarity == 2 || attackRarity == 3) {
+        sprite_index = varSPRstomp;
+        if (image_index >= image_number - 1) {
+            if (place_meeting(x, y, objKai) && objGame.canDie) {
+                objGame.varHealth -= 5;
+            }
+            varAttacking = false;
+            isAttackingRight = false;
+            isAttackingLeft = false;
+            varAttackDuration = 30;
+            attackRarity = irandom_range(1, 30);
         }
     }
     else if (attackRarity == 5 || attackRarity == 6) {
@@ -118,7 +118,7 @@ if (varAttacking) {
             isAttackingRight = false;
             isAttackingLeft = false;
             varAttackDuration = 30;
-            attackRarity = irandom_range(1, 10);
+            attackRarity = irandom_range(1, 30);
         }
     }
 
@@ -127,7 +127,7 @@ if (varAttacking) {
         isAttackingRight = false;
         isAttackingLeft = false;
         varAttackDuration = 30;
-        attackRarity = irandom_range(1, 10);
+        attackRarity = irandom_range(1, 30);
     }
 }
 
@@ -215,12 +215,12 @@ if point_distance(x,y,objKai.x,objKai.y) < 900 && point_distance(x,y,objKai.x,ob
             isAttackingRight = false;
             isAttackingLeft = false;
             varAttackDuration = 30;
-            varRandomATKRange = irandom_range(1, 10);
+            varRandomATKRange = irandom_range(1, 300);
         }
 	} else if varRandomATKRange == 7 or varRandomATKRange == 3 or varRandomATKRange == 6{
 		varAttacking = true
 		instance_create_layer(x,y,"riftLayer",objRift)
-		varRandomATKRange = irandom_range(1, 10);
+		varRandomATKRange = irandom_range(1, 300);
 		varAttacking = false
 	} else if varRandomATKRange == 2 {
 		varAttacking = true
@@ -235,10 +235,10 @@ if point_distance(x,y,objKai.x,objKai.y) < 900 && point_distance(x,y,objKai.x,ob
 				varBombSpray.direction = direction + 90 - irandom_range(-20,-100)
 			}
 		}
-		varRandomATKRange = irandom_range(1, 10);
+		varRandomATKRange = irandom_range(1, 300);
 		varAttacking = false
 	} else {
-		varRandomATKRange = irandom_range(1,20)
+		varRandomATKRange = irandom_range(1,300)
 	}
 }
 

@@ -1,3 +1,2 @@
-if objKai.debug {
-	game_restart()
-}
+
+game_restart()

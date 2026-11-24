@@ -368,4 +368,3 @@ else if varHasJetPack = true// This is flying
 	
 }
 
-move_wrap(true, true,0)

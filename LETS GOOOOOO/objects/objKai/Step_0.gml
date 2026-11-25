@@ -88,36 +88,6 @@ if varHasJetPack = false
 			if place_meeting(x+1,y+1,objSlope){
 				y-=varHSpeed/2
 			}
-		
-		if keyboard_check(ord("D")) {
-			for (var i = 0; i < varDash; i++) {
-				varHSpeed = varDashSpeed
-				if place_meeting(x + varHSpeed, y, objWall)
-				{
-					var varCollide = false;
-			
-					while not varCollide
-					{
-						// SIGN returns 1 when the number is positive
-						// SIGN returns -1 when the number is negative
-						// This allows use to take steps of 1 to get right
-						// up to the wall one pixel at a time
-						if not place_meeting(x + sign(varHSpeed), y, objWall)
-						{
-							x += sign(varHSpeed)
-						}
-						else
-						{
-							varCollide = true
-							varHSpeed = 0
-						}
-					}
-				} else {
-					x += varHSpeed
-					instance_create_layer(x,y,"riftLayer",objKaiAfterImage)
-				}
-			}
-		}
 	}
 
 	// if left arrow key down, then set HSpeed to the negative value of Walking Speed
@@ -367,4 +337,4 @@ else if varHasJetPack = true// This is flying
 {
 	
 }
-
+// 67 master was here

@@ -54,7 +54,9 @@
     {"link":"io.gamemaker.sdfshaders-1.0.0","name":"io.gamemaker.sdfshaders-1.0.0","path":"io.gamemaker.sdfshaders-1.0.0.yyp",},
     {"link":"io.gamemaker.gm_filter_hard_drop_shadow-1.0.0","name":"io.gamemaker.gm_filter_hard_drop_shadow-1.0.0","path":"io.gamemaker.gm_filter_hard_drop_shadow-1.0.0.yyp",},
   ],
-  "IncludedFiles":[],
+  "IncludedFiles":[
+    {"$GMIncludedFile":"","%Name":"363718_medium.mp4","CopyToMask":-1,"filePath":"datafiles","name":"363718_medium.mp4","resourceType":"GMIncludedFile","resourceVersion":"2.0",},
+  ],
   "isEcma":false,
   "LibraryEmitters":[],
   "MetaData":{
@@ -63,7 +65,6 @@
   "name":"LETS GOOOOOO",
   "resources":[
     {"id":{"name":"fntPlayer","path":"fonts/fntPlayer/fntPlayer.yy",},},
-    {"id":{"name":"doorCloseObject","path":"objects/doorCloseObject/doorCloseObject.yy",},},
     {"id":{"name":"objAttack","path":"objects/objAttack/objAttack.yy",},},
     {"id":{"name":"objBeamEnd","path":"objects/objBeamEnd/objBeamEnd.yy",},},
     {"id":{"name":"objBeamMid","path":"objects/objBeamMid/objBeamMid.yy",},},
@@ -83,8 +84,10 @@
     {"id":{"name":"objCheckpointParticle","path":"objects/objCheckpointParticle/objCheckpointParticle.yy",},},
     {"id":{"name":"objDialogue","path":"objects/objDialogue/objDialogue.yy",},},
     {"id":{"name":"objDoorClosed","path":"objects/objDoorClosed/objDoorClosed.yy",},},
+    {"id":{"name":"objDoorCloseObject","path":"objects/objDoorCloseObject/objDoorCloseObject.yy",},},
     {"id":{"name":"objDoorOpen","path":"objects/objDoorOpen/objDoorOpen.yy",},},
     {"id":{"name":"objDoorOpenOverLay","path":"objects/objDoorOpenOverLay/objDoorOpenOverLay.yy",},},
+    {"id":{"name":"Object61","path":"objects/Object61/Object61.yy",},},
     {"id":{"name":"objEnemyParent","path":"objects/objEnemyParent/objEnemyParent.yy",},},
     {"id":{"name":"objEnemyWall","path":"objects/objEnemyWall/objEnemyWall.yy",},},
     {"id":{"name":"objExplode","path":"objects/objExplode/objExplode.yy",},},
